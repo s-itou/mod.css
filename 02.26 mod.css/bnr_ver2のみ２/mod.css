@@ -441,6 +441,7 @@ body:after {
   border-radius: 5px;
   margin: 0;
   padding: 0;
+  color: white;
 }
 .mod-bnr_ver2 .mod-bnr-inner a {
   color: white;
@@ -493,7 +494,6 @@ body:after {
 .ex-style_01A1 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_01A1 .mod-bnr_ver2 .mod-bnr-inner-2, .ex-style_01A1 .mod-bnr_ver2 .mod-bnr-inner2-2, .ex-style_02A1 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02A1 .mod-bnr_ver2 .mod-bnr-inner-2, .ex-style_02A1 .mod-bnr_ver2 .mod-bnr-inner2-2 {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-b-1-2.png");
-  color: white;
 }
 .ex-style_01A2 .mod-bnr_ver2, .ex-style_02A2 .mod-bnr_ver2 {
   background-position: left top;
@@ -518,7 +518,6 @@ body:after {
 .ex-style_01A2 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02A2 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c8d9ea;
   background-image: url("img/_pat-item/bnr/bg-b-2-2.png");
-  color: white;
 }
 .ex-style_01A3 .mod-bnr_ver2, .ex-style_02A3 .mod-bnr_ver2 {
   background-position: left top;
@@ -543,7 +542,6 @@ body:after {
 .ex-style_01A3 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02A3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c9e2f0;
   background-image: url("img/_pat-item/bnr/bg-b-3-2.png");
-  color: white;
 }
 .ex-style_01B1 .mod-bnr_ver2, .ex-style_02B1 .mod-bnr_ver2 {
   background-position: left top;
@@ -568,7 +566,6 @@ body:after {
 .ex-style_01B1 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02B1 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-c-1-2.png");
-  color: white;
 }
 .ex-style_01B2 .mod-bnr_ver2, .ex-style_02B2 .mod-bnr_ver2 {
   background-position: left top;
@@ -624,7 +621,6 @@ body:after {
 .ex-style_01B3 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02B3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c9e2f0;
   background-image: url("img/_pat-item/bnr/bg-c-1-2.png");
-  color: white;
 }
 .ex-style_01C1 .mod-bnr_ver2, .ex-style_02C1 .mod-bnr_ver2 {
   background-position: left top;
@@ -649,7 +645,6 @@ body:after {
 .ex-style_01C1 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02C1 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: none;
-  color: white;
 }
 .ex-style_01C2 .mod-bnr_ver2, .ex-style_02C2 .mod-bnr_ver2 {
   background-position: left top;
@@ -674,7 +669,6 @@ body:after {
 .ex-style_01C2 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02C2 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #d6f0f4;
   background-image: none;
-  color: white;
 }
 .ex-style_01C3 .mod-bnr_ver2, .ex-style_02C3 .mod-bnr_ver2 {
   background-position: left top;
@@ -699,7 +693,6 @@ body:after {
 .ex-style_01C3 .mod-bnr_ver2 .mod-bnr-inner, .ex-style_02C3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #d1e7f3;
   background-image: none;
-  color: white;
 }
 
 .mod-2col-in1, .mod-2col-in1-inset {
@@ -1569,7 +1562,6 @@ body:after {
 .ex-style_01A1 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-b-1-2.png");
-  color: white;
 }
 .ex-style_01A1 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 15px 10px;
@@ -1671,7 +1663,6 @@ body:after {
 .ex-style_01A3 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-b-1-2.png");
-  color: white;
 }
 .ex-style_01A3 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 15px 10px;
@@ -1719,7 +1710,6 @@ body:after {
 .ex-style_01B1 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c5dcff;
   background-image: url("img/_pat-item/bnr/bg-c-4-2.png");
-  color: white;
 }
 .ex-style_01B1 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 30px 20px 25px;
@@ -1821,7 +1811,6 @@ body:after {
 .ex-style_01B3 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #fde5d2;
   background-image: url("img/_pat-item/bnr/bg-c-4-2.png");
-  color: white;
 }
 .ex-style_01B3 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 30px 20px 25px;
@@ -1870,7 +1859,6 @@ body:after {
 .ex-style_01C1 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: none;
-  color: white;
 }
 .ex-style_01C1 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 20px;
@@ -1919,7 +1907,6 @@ body:after {
 .ex-style_01C2 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ade9ef;
   background-image: none;
-  color: white;
 }
 .ex-style_01C2 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 20px;
@@ -1968,7 +1955,6 @@ body:after {
 .ex-style_01C3 .mod-set-design3 .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #d1e7f3;
   background-image: none;
-  color: white;
 }
 .ex-style_01C3 .mod-set-design3 > .mod-box-inner > .mod-box-inner2 {
   padding: 20px;
@@ -2067,7 +2053,6 @@ body:after {
 .ex-style_01A1 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-b-1-2.png");
-  color: white;
 }
 .ex-style_01A1 .mod-set-design-2col .mod-box_ver2 {
   padding: 10px;
@@ -2135,7 +2120,6 @@ body:after {
 .ex-style_01A3 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-b-1-2.png");
-  color: white;
 }
 .ex-style_01A3 .mod-set-design-2col .mod-box_ver2 {
   padding: 10px;
@@ -2166,7 +2150,6 @@ body:after {
 .ex-style_01B1 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c5dcff;
   background-image: url("img/_pat-item/bnr/bg-c-4-2.png");
-  color: white;
 }
 .ex-style_01B1 .mod-set-design-2col .mod-box_ver2 {
   padding: 20px 10px;
@@ -2234,7 +2217,6 @@ body:after {
 .ex-style_01B3 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #fde5d2;
   background-image: url("img/_pat-item/bnr/bg-c-4-2.png");
-  color: white;
 }
 .ex-style_01B3 .mod-set-design-2col .mod-box_ver2 {
   padding: 20px 10px;
@@ -2266,7 +2248,6 @@ body:after {
 .ex-style_01C1 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: none;
-  color: white;
 }
 .ex-style_01C1 .mod-set-design-2col .mod-box_ver2 {
   padding: 10px;
@@ -2298,7 +2279,6 @@ body:after {
 .ex-style_01C2 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ade9ef;
   background-image: none;
-  color: white;
 }
 .ex-style_01C2 .mod-set-design-2col .mod-box_ver2 {
   padding: 10px;
@@ -2330,7 +2310,6 @@ body:after {
 .ex-style_01C3 .mod-set-design-2col .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #d1e7f3;
   background-image: none;
-  color: white;
 }
 .ex-style_01C3 .mod-set-design-2col .mod-box_ver2 {
   padding: 10px;
@@ -2642,7 +2621,6 @@ body:after {
 .ex-style_01A1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner, .ex-style_01A1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner-2, .ex-style_01A1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner2-2 {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-b-1-2.png");
-  color: white;
 }
 .ex-style_01A2 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2670,7 +2648,6 @@ body:after {
 .ex-style_01A2 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c8d9ea;
   background-image: url("img/_pat-item/bnr/bg-b-2-2.png");
-  color: white;
 }
 .ex-style_01A3 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2698,7 +2675,6 @@ body:after {
 .ex-style_01A3 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c9e2f0;
   background-image: url("img/_pat-item/bnr/bg-b-3-2.png");
-  color: white;
 }
 .ex-style_01B1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2726,7 +2702,6 @@ body:after {
 .ex-style_01B1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: url("img/_pat-item/bnr/bg-c-1-2.png");
-  color: white;
 }
 .ex-style_01B2 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2788,7 +2763,6 @@ body:after {
 .ex-style_01B3 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #c9e2f0;
   background-image: url("img/_pat-item/bnr/bg-c-1-2.png");
-  color: white;
 }
 .ex-style_01C1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2817,7 +2791,6 @@ body:after {
 .ex-style_01C1 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #ffdddc;
   background-image: none;
-  color: white;
 }
 .ex-style_01C2 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2846,7 +2819,6 @@ body:after {
 .ex-style_01C2 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #d6f0f4;
   background-image: none;
-  color: white;
 }
 .ex-style_01C3 .mod-set-tokucho-bunsyo .mod-bnr_ver2 {
   background-position: left top;
@@ -2875,7 +2847,6 @@ body:after {
 .ex-style_01C3 .mod-set-tokucho-bunsyo .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #d1e7f3;
   background-image: none;
-  color: white;
 }
 
 .mod-set-pic-design .mod-2col_ver2 > .mod-2col-inner {
@@ -2926,7 +2897,6 @@ body:after {
 .ex-style_01A1 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01A1 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -2985,7 +2955,6 @@ body:after {
 .ex-style_01A2 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01A2 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -3044,7 +3013,6 @@ body:after {
 .ex-style_01A3 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01A3 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -3103,7 +3071,6 @@ body:after {
 .ex-style_01B1 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01B1 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -3227,7 +3194,6 @@ body:after {
 .ex-style_01B3 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01B3 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -3286,7 +3252,6 @@ body:after {
 .ex-style_01C1 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01C1 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -3410,7 +3375,6 @@ body:after {
 .ex-style_01C3 .mod-set-pic-design .mod-bnr_ver2 .mod-bnr-inner {
   border: none;
   background-image: url("img/_pat-item/bnr/bg-l-1-2.png");
-  color: white;
 }
 .ex-style_01C3 .mod-set-pic-design .mod-h_4_ver2 .mod-h_4-inner3 {
   padding: 3px 7px 0;
@@ -3531,7 +3495,6 @@ body:after {
 .ex-style_01B3 .mod-set-voice-h .mod-bnr_ver2 .mod-bnr-inner {
   border: 1px solid #fad1b2;
   background-image: url("img/_pat-item/bnr/bg-c-1-2.png");
-  color: white;
 }
 .ex-style_01B3 .mod-set-voice-h .mod-set-step > [class*="step"]:before {
   display: block;
