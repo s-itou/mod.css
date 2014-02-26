@@ -1,0 +1,122 @@
+@charset "UTF-8"
+
+@import ../../../pc/pc-style/mod-2column-style
+@import ../../../pc/pc-style/mod-3column-style
+
+// .mod-3col_ver2
+//   //1重の3col(未使用)
+//   +comm-style-mod-3col
+//   +modu-style-mod-3col
+
+// .mod-3col-footer
+//   +comm-style-mod-3col
+//   +modu-style-mod-3col-footer
+
+// .mod-3col-in1
+//   //2重の3col(未使用)
+//   +comm-style-mod-3col-in1
+//   +modu-style-mod-3col-in1
+
+.mod-3col-in2, .mod-3col-in2-inset
+  //3重の3col
+  +comm-style-mod-3col-in2
+  +modu-style-mod-3col-in2
+  +common-style-mod-bnr-for-3col
+  // +common-style-mod-h_4-for-3col
+  // +common-style-mod-h_5-for-3col
+  // +common-style-mod-h_5_pic-for-3col
+  // //仮名称
+  // +common-style-mod-rte-for-3col
+  // +common-style-mod-rte-koramu-for-3col
+  // +common-style-mod-text-for-2col
+  .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2
+    @extend %first-child-3col-in2
+  .mod-3col-inner-3, .mod-3col-inner2-3, .mod-3col-inner3-3
+    > .mod-2col_ver2, > .mod-2col
+      +modu-style-mod-2colin3col
+      @extend %first-child-2col
+      // +common-style-mod-h_5_pic-for-2colin3col
+      // //仮名称
+      +common-style-mod-bnr-for-2colin3col
+      // +common-style-mod-link-for-2col
+
+// 3カラム枠付きデザイン
+// .mod-3col-in2
+//   .mod-3col-wrap2 > div
+//     .ex-style_02A1 &
+//       +pat-item-h4-bgd-3col-wa1
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wa10
+//       +modu-style-mod-3col-waku
+//     .ex-style_02A2 &
+//       +pat-item-waku-simple-1px-2
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wa10
+//       +modu-style-mod-3col-waku
+//     .ex-style_02A3 &
+//       +pat-item-waku-simple-1px-3
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wa11
+//       +modu-style-mod-3col-waku
+//     .ex-style_02B1 &
+//       +pat-item-waku-simple-1px-4
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wa12
+//       +modu-style-mod-3col-waku
+//     .ex-style_02B2 &
+//       +pat-item-waku-simple-1px-5
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wa13
+//       +modu-style-mod-3col-waku
+//     .ex-style_02B3 &
+//       +pat-item-waku-simple-1px-6
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wa14
+//       .mod-bnr_ver2
+//         +pat-item-bnr-for-3col-c7
+//       +modu-style-mod-3col-waku
+//     .ex-style_02C1 &
+//       +pat-item-waku-simple-1px-7
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wc1
+//       +modu-style-mod-3col-waku
+//     .ex-style_02C2 &
+//       +pat-item-waku-simple-1px-7
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wc2
+//       +modu-style-mod-3col-waku
+//     .ex-style_02C3 &
+//       +pat-item-waku-simple-1px-8
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgd-3col-wc3
+//       +modu-style-mod-3col-waku
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// .mod-3col
+//   +comm-style-mod-3col-in2
+//   +modu-style-mod-3col-in2
+//   .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2
+//     @extend %first-child-3col-in2
+
+// .mod-3col4
+//   @extend .mod-3col_ver2
+
+// .mod-3col8
+//   @extend .mod-3col-footer
+
+// .mod-3col9
+//   +comm-style-mod-3col-in2
+//   +modu-style-mod-3col-in2
+//   .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2
+//     @extend %first-child-3col-in2
+
+// .mod-3col10
+//   +comm-style-mod-3col-in2
+//   +modu-style-mod-3col-in2
+//   margin: 10px 0 0 0
+//   .mod-3col-inner, .mod-3col-inner2
+//     margin: 0 10px 0 0
+//   .mod-3col-inner-2, .mod-3col-inner2-2, .mod-3col-inner3-2
+//     @extend %first-child-3col-in2

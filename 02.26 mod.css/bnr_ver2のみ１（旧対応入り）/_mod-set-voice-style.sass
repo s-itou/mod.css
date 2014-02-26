@@ -1,0 +1,191 @@
+@charset "UTF-8"
+
+// -------------------------------------
+// comm-style
+// -------------------------------------
+=comm-style-mod-set-voice
+
+// -------------------------------------
+// modu-style
+// -------------------------------------
+=modu-style-mod-set-voice-h
+  //特殊指定のため残す
+  .mod-box-inner > .mod-box-inner2
+    > .ex-first-child
+      > .ex-first-child
+        margin-top: 0 !important
+        > div > div > div
+          margin-top: 0 !important
+  > .mod-box-inner > .mod-box-inner2
+    padding-top: 4px
+  // .mod-set-h4
+  //   > .mod-h_4_ver2
+  //     .mod-h_4-inner
+  //       width: auto
+  //     .mod-h_4-inner3
+  //       background-color: transparent
+  //       background-image: none
+  //       padding: 2px 0
+  //       .mod-h
+  //         padding: 0
+  .mod-set-step > [class*="step"]
+    margin-top: 20px
+    border-top: 1px solid $bo-white-1
+    .mod-set-voice
+      padding-top: 25px
+    &.ex-first-child
+      margin-top: 25px
+      border-top: none
+      .mod-set-voice
+        padding-top: 0
+  // .mod-2col-in1
+  //   .mod-rte_ver2 ul,
+  //   .mod-rte_ver2 ol,
+  //   [class*="mod-link"]
+  //     overflow: hidden
+    .mod-bnr_ver2
+      overflow: hidden
+      margin-top: 15px
+  // table見出しの回り込み時の幅可変対応(GC,FF,IE対応版)
+  // .mod-h_5_ver2 {
+  //   width: auto !important;
+  //   &:before {
+  //     display: table-cell;
+  //     width: 0.1px;
+  //     height: 0;
+  //     content: "";
+  //   }
+  // }
+
+
+=modu-style-mod-set-voice
+  margin: 30px 0 0 0
+
+=modu-style-mod-set-voice-2col
+  margin: 30px 0 0 0
+
+=modu-style-mod-set-voice-3col
+  margin: 30px 0 0 0
+
+// -------------------------------------
+// deco-style
+// -------------------------------------
+=deco-style-mod-set-voice-h-1
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px dashed $bo-orange-5
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-2
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px dashed $bo-green-12
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-3
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px dashed $bo-blue-13
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-4
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px solid #98a6b5
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+  .mod-h_5_ver2 .mod-h
+    border-bottom: 1px solid #fd7c77
+    color: #fd7c77
+
+=deco-style-mod-set-voice-h-5
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px solid #98a6b5
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-6
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px solid #beb75b
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-7
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px dotted $bo-orange-5
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-8
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px dotted $bo-yellow-12
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
+
+=deco-style-mod-set-voice-h-9
+  .mod-set-step > [class*="step"]
+    &:before
+      display: block
+      margin-top: -1px
+      width: 100%
+      height: 0
+      border-top: 1px dotted #509ece
+      content: ""
+    &.ex-first-child:before
+      margin-top: 0
+      border-top: none
