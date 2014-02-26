@@ -1,0 +1,2322 @@
+@charset "UTF-8"
+
+// -------------------------------------
+//
+// pat-item-bnr
+//
+// -------------------------------------
+// -------------------------------------
+//block-style
+// -------------------------------------
+=block-style-mod-bnr-hover
+  //hover時の挙動
+  &:hover
+    opacity: 0.80
+    -ms-filter: "alpha(opacity=80)"
+  a:hover, a:hover p
+    text-decoration: none
+
+
+
+// -------------------------------------
+//  modu-style-pat-item-bnr
+// -------------------------------------
+=modu-style-pat-item-bnr
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod)対応
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr2
+  background-position: left top
+  background-repeat: no-repeat
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod)対応
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr3
+  background-position: left -1px
+  background-repeat: no-repeat
+  .mod-bnr-inner
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr4
+  margin-top: $mtLinksSS //common打ち消し
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr5
+  margin: 3px 0 2px //common打ち消し
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr6
+  margin-top: $mtLinkHeaderM //common打ち消し
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr7
+  +border-radius(3px) //common打ち消し
+  margin: $mtLinkHeaderM 0 2px //common打ち消し
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner
+    +border-radius(3px) //common打ち消し
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr8
+  margin-top: $mtLinkFooterM //common打ち消し
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr9
+  margin-top: $mtLinkHeaderM //common打ち消し
+  margin-bottom: 6px
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner
+    background-repeat: no-repeat
+
+// -------------------------------------
+//  size-style-pat-item-bnr
+// -------------------------------------
+=size-style-pat-item-bnr
+  min-width: 0
+  max-width: none
+  width: 270px
+  .mod-bnr-inner
+    max-height: 65px
+
+=size-style-pat-item-bnr2
+  min-width: 0
+  max-width: none
+  width: 260px
+  .mod-bnr-inner
+    max-height: 50px
+
+=size-style-pat-item-bnr3
+  min-width: 0
+  max-width: none
+  width: 195px
+  .mod-bnr-inner
+    max-height: 40px
+    p //common打ち消し
+      font-size: $fsBnrSS
+      line-height: 1.6
+
+=size-style-pat-item-bnr-box
+  min-width: 0
+  max-width: 230px
+  width: auto
+  .mod-bnr-inner
+    max-height: 47px
+    p //common打ち消し
+      font-size: $fsBnrSS
+
+=size-style-pat-item-bnr-2gyo
+  min-width: 0
+  max-width: none
+  @if $layoutCode == "L25"
+    width: 280px
+  @else if $layoutCode == "L30"
+    width: 254px
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod) 対応
+    max-height: 110px
+    p //common打ち消し
+      @if $layoutCode == "L25"
+        font-size: $fsBnrSS
+      @else if $layoutCode == "L30"
+        font-size: $fsBnrSSS
+    strong //2gyoのみ追加される要素
+      font-size: $fsBnrLL
+
+=size-style-pat-item-bnr-map
+  min-width: 0
+  max-width: none
+  width: 200px
+  .mod-bnr-inner
+    max-height: 65px
+    p //common打ち消し
+      font-size: $fsBnrS
+  //IE8のみハック
+  html > body & .mod-bnr-inner
+    height: 40px
+    min-height: 22px\9
+
+=size-style-pat-item-bnr-side
+  min-width: 0
+  max-width: none
+  width: auto
+  .mod-bnr-inner
+    max-height: 40px
+    p //common打ち消し
+      font-size: $fsBnrSideM
+      line-height: 1.6
+
+=size-style-pat-item-bnr-side2
+  min-width: 0
+  max-width: none
+  width: auto
+  .mod-bnr-inner
+    max-height: 58px
+    p //common打ち消し
+      font-size: $fsBnrSideM
+
+=size-style-pat-item-bnr-footer
+  min-width: 200px
+  max-width: 300px
+  width: auto
+  .mod-bnr-inner
+    max-height: 51px
+    p //common打ち消し
+      font-size: $fsBnrFooterM
+
+=size-style-pat-item-bnr-footer2
+  min-width: 0
+  max-width: none
+  width: 160px
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    max-height: 51px
+    p //common打ち消し
+      font-size: $fsBnrFooterM
+
+=size-style-pat-item-bnr-header
+  min-width: 0
+  max-width: none
+  width: 100%
+  .mod-bnr-inner
+    max-height: 49px
+    p //common打ち消し
+      font-size: $fsBnrHeaderM
+
+=size-style-pat-item-bnr-header2
+  min-width: 0
+  max-width: none
+  width: 100%
+  .mod-bnr-inner
+    max-height: 40px
+    p //common打ち消し
+      font-size: $fsBnrHeaderM
+      line-height: 1.2
+
+=size-style-pat-item-bnr-1st-header
+  min-width: 0
+  max-width: none
+  width: 150px
+  .mod-bnr-inner
+    max-height: 49px
+    p //common打ち消し
+      font-size: $fsBnrHeaderM
+
+=size-style-pat-item-bnr-2nd-header
+  min-width: 0
+  max-width: none
+  width: 150px
+  .mod-bnr-inner
+    max-height: 49px
+    p //common打ち消し
+      font-size: $fsBnrHeaderM
+
+// -------------------------------------
+//  size-style-pat-item-bnr-for-2col
+// -------------------------------------
+=size-style-pat-item-bnr-for-2col
+  min-width: 0
+  max-width: floor(($mainWidth - 40) / 3)
+  width: auto
+  .mod-bnr-inner
+    max-height: 53px
+    p
+      @if $layoutCode == "L25"
+        font-size: $fsBnrM
+      @else if $layoutCode == "L30"
+        font-size: $fsBnrS
+
+=size-style-pat-item-bnr-box-for-2col
+  min-width: 0
+  max-width: none
+  width: auto
+  .mod-bnr-inner
+    max-height: 46px
+    p //common打ち消し
+      font-size: $fsBnrSS
+
+=size-style-pat-item-bnr-box2-for-2col
+  min-width: 0
+  max-width: none
+  width: floor(($mainWidth - 82) / 2 - 143)
+  .mod-bnr-inner
+    max-height: 33px
+    p //common打ち消し
+      font-size: $fsBnrSSS - 1
+
+
+
+// -------------------------------------
+//  size-style-pat-item-bnr-for-2colin3col
+// -------------------------------------
+=size-style-pat-item-bnr-for-2colin3col
+  min-width: 0
+  max-width: none
+  @if $layoutCode == "L25"
+    width: 120px
+  @else if $layoutCode == "L30"
+    width: 102px
+  .mod-bnr-inner
+    max-height: 49px
+    p //common打ち消し
+      font-size: $fsBnrSS
+
+// -------------------------------------
+//  size-style-pat-item-bnr-for-3col
+// -------------------------------------
+=size-style-pat-item-bnr-for-3col
+  min-width: 0
+  max-width: floor(($mainWidth - 40) / 3)
+  width: auto
+  .mod-bnr-inner
+    max-height: 53px
+    p //common打ち消し
+      @if $layoutCode == "L25"
+        font-size: $fsBnrM
+      @else if $layoutCode == "L30"
+        font-size: $fsBnrS
+
+
+// -------------------------------------
+//  size-style-pat-item-bnr-for-4col
+// -------------------------------------
+=size-style-pat-item-bnr-for-4col
+  min-width: 0
+  max-width: none
+  width: auto
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      max-height: 47px
+      p //common打ち消し
+        font-size: $fsBnrS
+    @else if $layoutCode == "L30"
+      max-height: 43px
+      p //common打ち消し
+        font-size: $fsBnrSSS
+
+// -------------------------------------
+//  insz-style-pat-item-bnr
+// -------------------------------------
+=insz-style-pat-item-bnr-b
+  .mod-bnr-inner
+    padding: 11px 5px 10px 30px
+    background-position: 10px 15px
+
+=insz-style-pat-item-bnr-box-b
+  .mod-bnr-inner
+    padding: 5px 5px 4px 30px
+    background-position: 10px 8px
+
+=insz-style-pat-item-bnr-side2-b
+  .mod-bnr-inner
+    padding: 10px 5px 10px 30px
+    background-position: 10px 13px
+
+=insz-style-pat-item-bnr-footer-b
+  .mod-bnr-inner
+    padding: 5px 10px 5px 25px
+    background-position: 7px 8px
+
+=insz-style-pat-item-bnr-c
+  .mod-bnr-inner
+    padding: 11px 5px 10px 30px
+    background-position: 10px 11px
+
+=insz-style-pat-item-bnr-box-c
+  .mod-bnr-inner
+    padding: 5px 5px 4px 30px
+    background-position: 10px 6px
+
+=insz-style-pat-item-bnr-d
+  .mod-bnr-inner
+    padding: 11px 5px 10px 30px
+    background-position: left top
+
+=insz-style-pat-item-bnr-box-d
+  background-position: -7px -6px
+  //common打ち消し
+  .mod-bnr-inner
+    padding: 5px 5px 4px 30px
+    background-position: left top
+
+=insz-style-pat-item-bnr-footer-d
+  .mod-bnr-inner
+    padding: 5px 10px 5px 25px
+    background-position: left top
+
+=insz-style-pat-item-bnr-footer2-b
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    padding: 7px 5px 6px 30px
+    background-position: 9px 10px
+
+=insz-style-pat-item-bnr-footer2-d
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    padding: 7px 5px 6px 30px
+    background-position: left top
+
+=insz-style-pat-item-bnr-header-b
+  .mod-bnr-inner
+    padding: 4px 5px 3px 23px
+    background-position: 7px 6px
+
+=insz-style-pat-item-bnr-header-d
+  .mod-bnr-inner
+    padding: 4px 5px 3px 23px
+    background-position: left top
+
+=insz-style-pat-item-bnr-header2-g
+  .mod-bnr-inner
+    padding: 3px 5px 2px 24px
+    background-position: 9px 5px
+
+=insz-style-pat-item-bnr-1st-header-b
+  .mod-bnr-inner
+    padding: 6px 5px 5px 29px
+    background-position: 9px 10px
+
+=insz-style-pat-item-bnr-1st-header-d
+  .mod-bnr-inner
+    padding: 4px 5px 3px 23px
+    background-position: left top
+
+=insz-style-pat-item-bnr-2nd-header-b
+  .mod-bnr-inner
+    padding: 3px 5px 2px 29px
+    background-position: 9px 6px
+
+=insz-style-pat-item-bnr-2nd-header-d
+  background-position: left -2px //打ち消し
+  .mod-bnr-inner
+    padding: 3px 5px 2px 29px
+    background-position: left top
+
+=insz-style-pat-item-bnr-f
+  .mod-bnr-inner
+    padding: 0 0 0 18px
+    background-position: left center
+
+=insz-style-pat-item-bnr2-h
+  .mod-bnr-inner
+    padding: 4px 30px 2px 30px
+    background-position: 9px 6px
+
+=insz-style-pat-item-bnr2-i
+  .mod-bnr-inner
+    padding: 4px 30px 2px 30px
+    background-position: left top
+
+=insz-style-pat-item-bnr-map-j
+  .mod-bnr-inner
+    padding: 10px 5px 10px 25px
+    background-position: 9px 13px
+
+=insz-style-pat-item-bnr-2gyo-a
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod)対応
+    background-position: left top
+    @if $layoutCode == "L25"
+      padding: 10px 15px
+    @else if $layoutCode == "L30"
+      padding: 10px 10px
+
+=insz-style-pat-item-bnr-2gyo-e
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod)対応
+    background-position: left top
+    @if $layoutCode == "L25"
+      padding: 10px 15px
+    @else if $layoutCode == "L30"
+      padding: 10px 10px
+
+=insz-style-pat-item-bnr-2gyo-d
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod)対応
+    background-position: left top
+    @if $layoutCode == "L25"
+      padding: 10px 15px
+    @else if $layoutCode == "L30"
+      padding: 10px 10px
+
+// -------------------------------------
+//  insz-style-pat-item-bnr-for-2col
+// -------------------------------------
+=insz-style-pat-item-bnr-for-2col-b
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 30px
+      background-position: 10px 9px
+    @else if $layoutCode == "L30"
+      padding: 5px 5px 4px 23px
+      background-position: 7px 9px
+
+=insz-style-pat-item-bnr-box-for-2col-b
+  .mod-bnr-inner
+    padding: 5px 5px 3px 25px
+    background-position: 8px 8px
+
+=insz-style-pat-item-bnr-box2-for-2col-l
+  .mod-bnr-inner
+    padding: 1px 5px 0px 17px
+    background-position: 8px 4px
+
+=insz-style-pat-item-bnr-for-2col-c
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 30px
+      background-position: 10px 6px
+    @else if $layoutCode == "L30"
+      padding: 5px 5px 4px 23px
+      background-position: 7px 6px
+
+=insz-style-pat-item-bnr-box-for-2col-c
+  .mod-bnr-inner
+    padding: 5px 5px 3px 25px
+    background-position: 8px 5px
+
+=insz-style-pat-item-bnr-for-2col-d
+  background-position: -6px -5px //common打ち消し
+  .mod-bnr-inner
+    background-position: left top
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 30px
+    @else if $layoutCode == "L30"
+      padding: 5px 5px 4px 23px
+
+=insz-style-pat-item-bnr-box-for-2col-d
+  background-position: -7px -6px //common打ち消し
+  .mod-bnr-inner
+    padding: 5px 5px 3px 25px
+    background-position: left top
+
+// -------------------------------------
+//  insz-style-pat-item-bnr-for-2colin3col
+// -------------------------------------
+=insz-style-pat-item-bnr-for-2colin3col-b
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 6px 5px 5px 25px
+      background-position: 8px 9px
+    @else if $layoutCode == "L30"
+      padding: 6px 5px 5px 25px
+      background-position: 3px 9px
+
+=insz-style-pat-item-bnr-for-2colin3col-c
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 6px 5px 5px 25px
+      background-position: 8px 5px
+    @else if $layoutCode == "L30"
+      padding: 6px 5px 5px 25px
+      background-position: 2px 5px
+
+=insz-style-pat-item-bnr-for-2colin3col-d
+  background-position: -7px -6px //common打ち消し
+  .mod-bnr-inner
+    padding: 6px 5px 5px 25px
+    background-position: left top
+
+// -------------------------------------
+//  insz-style-pat-item-bnr-for-3col
+// -------------------------------------
+=insz-style-pat-item-bnr-for-3col-b
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 30px
+      background-position: 10px 9px
+    @else if $layoutCode == "L30"
+      padding: 5px 5px 4px 23px
+      background-position: 7px 9px
+
+=insz-style-pat-item-bnr-for-3col-c
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 30px
+      background-position: 10px 6px
+    @else if $layoutCode == "L30"
+      padding: 5px 5px 4px 23px
+      background-position: 7px 6px
+
+=insz-style-pat-item-bnr-for-3col-d
+  background-position: -6px -5px //common打ち消し
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 30px
+      background-position: left top
+    @else if $layoutCode == "L30"
+      padding: 5px 5px 4px 23px
+      background-position: left top
+
+
+// -------------------------------------
+//  insz-style-pat-item-bnr-for-4col
+// -------------------------------------
+=insz-style-pat-item-bnr-for-4col-b
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 25px
+      background-position: 8px 8px
+    @else if $layoutCode == "L30"
+      padding: 5px 3px 4px 20px
+      background-position: 5px 7px
+
+=insz-style-pat-item-bnr-for-4col-c
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 25px
+      background-position: 7px 5px
+    @else if $layoutCode == "L30"
+      padding: 5px 3px 4px 20px
+      background-position: 3px 4px
+
+=insz-style-pat-item-bnr-for-4col-d
+  background-position: -10px -5px //common打ち消し
+  .mod-bnr-inner
+    @if $layoutCode == "L25"
+      padding: 5px 5px 4px 25px
+      background-position: left top
+    @else if $layoutCode == "L30"
+      padding: 5px 3px 4px 20px
+      background-position: left top
+
+// -------------------------------------
+// deco-style-pat-item-bnr-a
+// -------------------------------------
+=deco-style-pat-item-bnr-a1 //1a1 青
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-28
+  background-image: url("img/_pat-item/bnr/bg-a-1-1.png")
+  .mod-bnr-inner, .mod-bnr-inner2 //bnr-set4(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-a2 //1a2 緑
+  border: 1px solid $bo-green-12
+  background-color: $bg-green-21
+  background-image: url("img/_pat-item/bnr/bg-a-2-1.png")
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-a3 //1a3 オレンジ
+  border: 1px solid $bo-orange-9
+  background-color: $bg-orange-9
+  background-image: url("img/_pat-item/bnr/bg-a-3-1.png")
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+// -------------------------------------
+// deco-style-pat-item-bnr-b
+// -------------------------------------
+=deco-style-pat-item-bnr-b1 //1a1
+  border: 1px solid $bo-pink-7
+  background-color: $bg-pink-6
+  background-image: url("img/_pat-item/bnr/bg-b-1-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-pink-1
+    background-image: url("img/_pat-item/bnr/bg-b-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b2 //1a2
+  border: 1px solid $bo-blue-24
+  background-color: $bg-blue-39
+  background-image: url("img/_pat-item/bnr/bg-b-2-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-56
+    background-image: url("img/_pat-item/bnr/bg-b-2-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b3 //1a3
+  border: 1px solid $bo-blue-32
+  background-color: $bg-blue-38
+  background-image: url("img/_pat-item/bnr/bg-b-3-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-4
+    background-image: url("img/_pat-item/bnr/bg-b-3-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b4 //サイド1a1 青
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-28
+  background-image: url("img/_pat-item/bnr/bg-a-1-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-4-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b5 //サイド1a2 緑
+  border: 1px solid $bo-green-12
+  background-color: $bg-green-21
+  background-image: url("img/_pat-item/bnr/bg-a-2-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-5-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b6 //サイド1a3 橙
+  border: 1px solid $bo-orange-9
+  background-color: $bg-orange-9
+  background-image: url("img/_pat-item/bnr/bg-a-3-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-6-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b7 //フッター1a3 青
+  border: 1px solid $bo-blue-20
+  background-color: $bg-blue-38
+  background-image: url("img/_pat-item/bnr/bg-b-7-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-4
+    background-image: url("img/_pat-item/bnr/bg-b-7-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b8 //フッター1b1 金
+  border: 1px solid $bo-yellow-12
+  background-color: $bg-yellow-30
+  background-image: url("img/_pat-item/bnr/bg-b-8-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-18
+    background-image: url("img/_pat-item/bnr/bg-b-8-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b9 //フッター1b3 ピンク
+  border: 1px solid $bo-pink-3
+  background-color: $bg-pink-7
+  background-image: url("img/_pat-item/bnr/bg-b-9-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-pink-8
+    background-image: url("img/_pat-item/bnr/bg-b-9-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b10 //フッター２連用 1a2 緑
+  border: 1px solid $bo-green-12
+  background-color: $bg-green-23
+  background-image: url("img/_pat-item/bnr/bg-b-10-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-green-5
+    background-image: url("img/_pat-item/bnr/bg-b-10-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b11 //フッター２連用 1b1 青
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-28
+  background-image: url("img/_pat-item/bnr/bg-b-11-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-blue-36
+    background-image: url("img/_pat-item/bnr/bg-b-11-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b12 //フッター２連用 1b2　緑
+  border: 1px solid $bo-green-15
+  background-color: $bg-green-27
+  background-image: url("img/_pat-item/bnr/bg-b-12-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-green-22
+    background-image: url("img/_pat-item/bnr/bg-b-12-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b13 //フッター２連用 1b3　オレンジ
+  border: 1px solid $bo-orange-14
+  background-color: $bg-orange-9
+  background-image: url("img/_pat-item/bnr/bg-b-13-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-orange-18
+    background-image: url("img/_pat-item/bnr/bg-b-13-2.png")
+    color: $co-white-1
+
+//pat-item-bnr-header
+=deco-style-pat-item-bnr-b16 //ヘッダー　オレンジ
+  border: 1px solid $bo-orange-10
+  background-color: $bg-orange-15
+  background-image: url("img/_pat-item/bnr/bg-b-16-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-16-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b17 //ヘッダー　緑
+  border: 1px solid $bo-green-10
+  background-color: $bg-green-35
+  background-image: url("img/_pat-item/bnr/bg-b-17-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-17-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b18 //ヘッダー　黄色
+  border: 1px solid $bo-yellow-14
+  background-color: $bg-yellow-39
+  background-image: url("img/_pat-item/bnr/bg-b-18-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-18-2.png")
+    color: $co-brown-6
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+=deco-style-pat-item-bnr-b19 //ヘッダー　青
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-28
+  background-image: url("img/_pat-item/bnr/bg-b-19-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-36
+    background-image: url("img/_pat-item/bnr/bg-b-19-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b20 //ヘッダー　緑
+  border: 1px solid $bo-green-10
+  background-color: $bg-green-36
+  background-image: url("img/_pat-item/bnr/bg-b-20-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-green-19
+    background-image: url("img/_pat-item/bnr/bg-b-20-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b21 //ヘッダー　黄
+  border: 1px solid $bo-yellow-24
+  background-color: $bg-yellow-16
+  background-image: url("img/_pat-item/bnr/bg-b-21-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-13
+    background-image: url("img/_pat-item/bnr/bg-b-21-2.png")
+    color: $co-brown-6
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+=deco-style-pat-item-bnr-b22 //ヘッダー青
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-27
+  background-image: url("img/_pat-item/bnr/bg-b-22-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-22-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b23 //ヘッダー　黄
+  border: 1px solid $bo-yellow-12
+  background-color: $bg-yellow-33
+  background-image: url("img/_pat-item/bnr/bg-b-23-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-23-2.png")
+    color: $co-blue-5
+    a //common打ち消し
+      color: $co-blue-5
+    a:hover
+      color: $co-blue-5
+
+=deco-style-pat-item-bnr-b24 //ヘッダー　ピンク
+  border: 1px solid $bo-pink-5
+  background-color: $bg-pink-6
+  background-image: url("img/_pat-item/bnr/bg-b-24-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-b-24-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b25 //ヘッダー　黄
+  border: 1px solid $bo-yellow-12
+  background-color: $bg-yellow-30
+  background-image: url("img/_pat-item/bnr/bg-b-25-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-18
+    background-image: url("img/_pat-item/bnr/bg-b-25-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b26 //ヘッダー　オレンジ
+  border: 1px solid $bo-orange-11
+  background-color: $bg-orange-27
+  background-image: url("img/_pat-item/bnr/bg-b-26-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-orange-18
+    background-image: url("img/_pat-item/bnr/bg-b-26-2.png")
+    color: $co-white-1
+
+//pat-item-bnr-box
+=deco-style-pat-item-bnr-b14 //1a1 ピンク
+  border: 1px solid $bo-pink-7
+  background-color: $bg-pink-6
+  background-image: url("img/_pat-item/bnr/bg-b-1-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-pink-1
+    background-image: url("img/_pat-item/bnr/bg-b-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-b15 //1a2 黄
+  border: 1px solid $bo-yellow-12
+  background-color: $bg-yellow-33
+  background-image: url("img/_pat-item/bnr/bg-b-15-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-23
+    background-image: url("img/_pat-item/bnr/bg-b-15-2.png")
+    color: $co-blue-6
+    a //common打ち消し
+      color: $co-blue-6
+    a:hover
+      color: $co-blue-6
+
+// -------------------------------------
+// deco-style-pat-item-bnr-c
+// -------------------------------------
+=deco-style-pat-item-bnr-c1 //1c1
+  border: 1px solid $bo-pink-7
+  background-color: $bg-pink-6
+  background-image: url("img/_pat-item/bnr/bg-b-1-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-pink-1
+    background-image: url("img/_pat-item/bnr/bg-c-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-c2 //1c2
+  border: 1px solid $bo-yellow-12
+  background-color: $bg-yellow-28
+  background-image: url("img/_pat-item/bnr/bg-c-2-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-23
+    background-image: url("img/_pat-item/bnr/bg-c-1-2.png")
+    color: $co-green-7
+    a //common打ち消し
+      color: $co-green-7
+    a:hover
+      color: $co-green-7
+
+=deco-style-pat-item-bnr-c3 //1c3
+  border: 1px solid $bo-blue-32
+  background-color: $bg-blue-38
+  background-image: url("img/_pat-item/bnr/bg-b-3-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-4
+    background-image: url("img/_pat-item/bnr/bg-c-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-c4 //1c1 青
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-31
+  background-image: url("img/_pat-item/bnr/bg-c-4-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-6
+    background-image: url("img/_pat-item/bnr/bg-c-4-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-c5 //1c2 黄
+  border: 1px solid $bo-yellow-11
+  background-color: $bg-yellow-34
+  background-image: url("img/_pat-item/bnr/bg-c-5-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-22
+    background-image: url("img/_pat-item/bnr/bg-c-4-2.png")
+    color: $co-blue-10
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-c6 //1c3 オレンジ
+  border: 1px solid $bo-orange-18
+  background-color: $bg-orange-25
+  background-image: url("img/_pat-item/bnr/bg-c-6-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-orange-23
+    background-image: url("img/_pat-item/bnr/bg-c-4-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-c7 //1c2 画像３列オレンジ
+  border: 1px solid $bo-orange-16
+  background-color: $bg-orange-25
+  background-image: url("img/_pat-item/bnr/bg-c-7-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-orange-12
+    background-image: url("img/_pat-item/bnr/bg-c-1-2.png")
+    color: $co-white-1
+
+// -------------------------------------
+// deco-style-pat-item-bnr-d
+// -------------------------------------
+=deco-style-pat-item-bnr-d1 //1c1
+  border: 1px solid $bo-pink-7
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-1-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-pink-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d2 //1c2
+  border: 1px solid $bo-green-12
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-2-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-green-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d3 //1c3
+  border: 1px solid $bo-blue-32
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-3-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-green-35
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d4 //1c1
+  border: 1px solid $bo-blue-26
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-4-1.png")
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d5 //1c2
+  border: 1px solid $bo-green-12
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-5-1.png")
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d6 //1c3
+  border: 1px solid $bo-orange-9
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-6-1.png")
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d7 //フッター1c1 青
+  border: 1px solid $bo-blue-33
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-7-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d8 //フッター1c2 黄
+  border: 1px solid $bo-yellow-12
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-8-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-9
+    background-image: none
+    color: $co-blue-10
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-d9 //フッター2連用1c1 ピンク
+  border: 1px solid $bo-pink-5
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-9-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-pink-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d10 //フッター2連用1c2 緑
+  border: 1px solid $bo-green-12
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-10-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-green-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d11 //フッター2連用1c3 青
+  border: 1px solid $bo-orange-8
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-11-1.png")
+  .mod-bnr-inner, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set5(旧mod)対応
+    border: 1px solid $bo-orange-1
+    background-image: none
+    color: $co-white-1
+
+//pat-item-bnr-box
+=deco-style-pat-item-bnr-d12
+  border: 1px solid $bo-pink-5
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-12-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-pink-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d13
+  border: 1px solid $bo-green-23
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-13-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-green-6
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d14
+  border: 1px solid $bo-blue-20
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-d-14-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-green-35
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d15
+  border: 1px solid $bo-pink-5
+  background-image: url("img/_pat-item/bnr/bg-d-15-1.png")
+  background-color: transparent
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d16
+  border: 1px solid $bo-yellow-10
+  background-image: url("img/_pat-item/bnr/bg-d-16-1.png")
+  background-color: transparent
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: none
+    color: $co-blue-5
+    a //common打ち消し
+      color: $co-blue-5
+    a:hover
+      color: $co-blue-5
+
+=deco-style-pat-item-bnr-d17
+  border: 1px solid $bo-orange-8
+  background-image: url("img/_pat-item/bnr/bg-d-17-1.png")
+  background-color: transparent
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d18
+  border: 1px solid $bo-blue-26
+  background-image: url("img/_pat-item/bnr/bg-d-18-1.png")
+  background-color: transparent
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d19
+  border: 1px solid $bo-green-19
+  background-image: url("img/_pat-item/bnr/bg-d-19-1.png")
+  background-color: transparent
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: none
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-d20
+  border: 1px solid $bo-blue-33
+  background-image: url("img/_pat-item/bnr/bg-d-20-1.png")
+  background-color: transparent
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: none
+    color: $co-white-1
+
+// -------------------------------------
+// deco-style-pat-item-bnr-e
+// -------------------------------------
+=deco-style-pat-item-bnr-e1
+  //1b1 青
+  background-image: url("img/_pat-item/bnr/bg-e-1-1.png")
+  background-color: transparent
+  border: none
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: none
+    background-image: none
+    color: $co-white-1
+    p
+      text-align: center //common打ち消し
+
+=deco-style-pat-item-bnr-e2
+  //1b2 緑
+  background-image: url("img/_pat-item/bnr/bg-e-2-1.png")
+  background-color: transparent
+  border: none
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: none
+    background-image: none
+    color: $co-white-1
+    p
+      text-align: center //common打ち消し
+
+=deco-style-pat-item-bnr-e3
+  //1b3 オレンジ
+  background-image: url("img/_pat-item/bnr/bg-e-3-1.png")
+  background-color: transparent
+  border: none
+  .mod-bnr-inner, .mod-bnr-inner2  //bnr-set4(旧mod)対応
+    border: none
+    background-image: none
+    color: $co-white-1
+    p
+      text-align: center //common打ち消し
+
+// -------------------------------------
+// deco-style-pat-item-bnr-f
+// -------------------------------------
+=deco-style-pat-item-bnr-f1 //青
+  border-top: 1px solid $bo-blue-49
+  border-right: 1px solid $bo-blue-40
+  border-bottom: 1px solid $bo-blue-40
+  background-color: $bg-blue-44
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-f-1-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-f2//緑
+  border-top: 1px solid $bo-green-10
+  border-right: 1px solid $bo-green-24
+  border-bottom: 1px solid $bo-green-24
+  background-color: $bg-green-32
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-f-2-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-f3 //オレンジ
+  border-top: 1px solid $bo-orange-28
+  border-right: 1px solid $bo-orange-20
+  border-bottom: 1px solid $bo-orange-20
+  background-color: $bg-orange-21
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-f-3-1.png")
+    color: $co-white-1
+
+// -------------------------------------
+// deco-style-pat-item-bnr-g
+// -------------------------------------
+=deco-style-pat-item-bnr-g1 //薄い青　ヘッダー
+  border: 1px solid $bo-blue-11
+  background-color: $bg-blue-11
+  background-image: none
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: url("img/_pat-item/bnr/bg-g-1-1.png")
+    color: $co-black-1
+    a //common打ち消し
+      color: $co-black-1
+    a:hover
+      color: $co-black-1
+
+=deco-style-pat-item-bnr-g2 //薄緑　ヘッダー
+  border: 1px solid $bo-green-10
+  background-color: $bg-green-7
+  background-image: none
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: url("img/_pat-item/bnr/bg-g-2-1.png")
+    color: $co-blue-16
+    a //common打ち消し
+      color: $co-blue-16
+    a:hover
+      color: $co-blue-16
+
+=deco-style-pat-item-bnr-g3 //ピンク　ヘッダー
+  border: 1px solid $bo-pink-4
+  background-color: $bg-pink-3
+  background-image: none
+  .mod-bnr-inner
+    border: 1px solid $co-white-1
+    background-image: url("img/_pat-item/bnr/bg-g-3-1.png")
+    color: $co-brown-8
+    a //common打ち消し
+      color: $co-brown-8
+    a:hover
+      color: $co-brown-8
+
+=deco-style-pat-item-bnr-g4 //紺　ヘッダー
+  border: none
+  background-color: $bg-blue-48
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-g5 //緑　ヘッダー
+  border: none
+  background-color: $bg-green-12
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-5-1.png")
+    color: $co-green-7
+    a //common打ち消し
+      color: $co-green-7
+    a:hover
+      color: $co-green-7
+
+=deco-style-pat-item-bnr-g6 //黄土色　ヘッダー
+  border: none
+  background-color: $bg-yellow-32
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-6-1.png")
+    color: $co-brown-6
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+=deco-style-pat-item-bnr-g7 //水色　ヘッダー
+  border: none
+  background-color: $bg-blue-13
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-7-1.png")
+    color: $co-blue-10
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-g8 //黄色　ヘッダー
+  border: none
+  background-color: $bg-yellow-7
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-8-1.png")
+    color: $co-blue-10
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-g9 //黄色　ヘッダー
+  border: none
+  background-color: $bg-yellow-7
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-9-1.png")
+    color: $co-brown-6
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+=deco-style-pat-item-bnr-g10 //オレンジ　ヘッダー
+  border: none
+  background-color: $bg-orange-10
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-g11 //緑　ヘッダー
+  border: none
+  background-color: $bg-green-28
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-g12 //水色　ヘッダー
+  border: none
+  background-color: $bg-blue-25
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-g13 //青　ヘッダー
+  border: none
+  background-color: $bg-blue-26
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-g14 //オレンジ　ヘッダー
+  border: none
+  background-color: $bg-yellow-32
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-6-1.png")
+    color: $co-brown-6
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+=deco-style-pat-item-bnr-g15 //青　ヘッダー
+  border: none
+  background-color: $bg-blue-27
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-g16 //緑　ヘッダー
+  border: none
+  background-color: $bg-green-28
+  background-image: none
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-g-4-1.png")
+    color: $co-white-1
+
+// -------------------------------------
+// deco-style-pat-item-bnr-h
+// -------------------------------------
+=deco-style-pat-item-bnr-h1 //青
+  border: 1px solid $bo-blue-11
+  background-color: $bg-blue-11
+  background-image: none
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-h-1-1.png")
+    color: $co-blue-8
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+
+=deco-style-pat-item-bnr-h2 //緑
+  border: 1px solid $bo-green-10
+  background-color: $bg-green-7
+  background-image: none
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-h-2-1.png")
+    color: $co-blue-16
+    a //common打ち消し
+      color: $co-blue-16
+    a:hover
+      color: $co-blue-16
+
+=deco-style-pat-item-bnr-h3 //ピンク
+  border: 1px solid $bo-pink-4
+  background-color: $bg-pink-3
+  background-image: none
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: url("img/_pat-item/bnr/bg-h-3-1.png")
+    color: $co-brown-8
+    a //common打ち消し
+      color: $co-brown-8
+    a:hover
+      color: $co-brown-8
+
+=deco-style-pat-item-bnr-h4 //グレー
+  border: 1px solid $bo-blue-16
+  background-color: $bg-gray-4
+  background-image: url("img/_pat-item/bnr/bg-h-4-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-gray-1
+    background-image: url("img/_pat-item/bnr/bg-h-4-2.png")
+    color: $co-blue-19
+    a //common打ち消し
+      color: $co-blue-19
+    a:hover
+      color: $co-blue-19
+
+=deco-style-pat-item-bnr-h5 //緑
+  border: 1px solid $bo-green-5
+  background-color: $bg-green-8
+  background-image: url("img/_pat-item/bnr/bg-h-5-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-2
+    background-image: url("img/_pat-item/bnr/bg-h-5-2.png")
+    color: $co-green-4
+    a //common打ち消し
+      color: $co-green-4
+    a:hover
+      color: $co-green-4
+
+=deco-style-pat-item-bnr-h6 //薄黄
+  border: 1px solid $bo-yellow-8
+  background-color: $bg-yellow-31
+  background-image: url("img/_pat-item/bnr/bg-h-6-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-yellow-1
+    background-image: url("img/_pat-item/bnr/bg-h-6-2.png")
+    color: $co-gray-7
+    a //common打ち消し
+      color: $co-gray-7
+    a:hover
+      color: $co-gray-7
+
+// -------------------------------------
+// deco-style-pat-item-bnr-i
+// -------------------------------------
+=deco-style-pat-item-bnr-i1 //青
+  border: 1px solid $bo-blue-5
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-i-1-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-blue-1
+    background-image: none
+    color: $co-blue-10
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-i2 //黄
+  border: 1px solid $bo-yellow-2
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-i-2-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-brown-6
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+=deco-style-pat-item-bnr-i3 //オレンジ
+  border: 1px solid $bo-orange-5
+  background-color: $bg-orange-3
+  background-image: url("img/_pat-item/bnr/bg-i-3-1.png")
+  .mod-bnr-inner
+    border: 1px solid $bo-white-1
+    background-image: none
+    color: $co-brown-8
+    a //common打ち消し
+      color: $co-brown-8
+    a:hover
+      color: $co-brown-8
+
+// -------------------------------------
+// deco-style-pat-item-bnr-j
+// -------------------------------------
+=deco-style-pat-item-bnr-j1 //1a1 茶
+  border-right: 1px solid $bo-gray-8
+  border-bottom: 1px solid $bo-gray-8
+  background-color: transparent
+  background-image: none
+  .mod-bnr-inner
+    background-color: $bg-yellow-1
+    background-image: url("img/_pat-item/bnr/bg-j-1-1.png")
+    color: $co-black-1
+    a //common打ち消し
+      color: $co-black-1
+    a:hover
+      color: $co-black-1
+
+=deco-style-pat-item-bnr-j2 //1a2 青
+  border-right: 1px solid $bo-gray-8
+  border-bottom: 1px solid $bo-gray-8
+  background-color: transparent
+  background-image: none
+  .mod-bnr-inner
+    background-color: $bg-yellow-1
+    background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+    color: $co-black-1
+    a //common打ち消し
+      color: $co-black-1
+    a:hover
+      color: $co-black-1
+
+=deco-style-pat-item-bnr-j3 //1a3 オレンジ
+  border-right: 1px solid $bo-gray-8
+  border-bottom: 1px solid $bo-gray-8
+  background-color: transparent
+  background-image: none
+  .mod-bnr-inner
+    background-color: $bg-yellow-1
+    background-image: url("img/_pat-item/bnr/bg-j-3-1.png")
+    color: $co-black-1
+    a //common打ち消し
+      color: $co-black-1
+    a:hover
+      color: $co-black-1
+
+// -------------------------------------
+// deco-style-pat-item-bnr-l
+// -------------------------------------
+=deco-style-pat-item-bnr-l1 //1a1
+  border: none
+  background-color: $bg-pink-6
+  background-image: url("img/_pat-item/bnr/bg-l-1-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-l2 //1a2
+  border: none
+  background-color: $bg-blue-53
+  background-image: url("img/_pat-item/bnr/bg-l-2-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-l3 //1a3
+  border: none
+  background-color: $bg-blue-38
+  background-image: url("img/_pat-item/bnr/bg-l-3-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-l4 //1b1
+  border: none
+  background-color: $bg-blue-51
+  background-image: url("img/_pat-item/bnr/bg-l-4-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-l5 //1b2
+  border: none
+  background-color: $bg-yellow-35
+  background-image: url("img/_pat-item/bnr/bg-l-5-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-5-2.png")
+    color: $co-green-7
+    a //common打ち消し
+      color: $co-green-7
+    a:hover
+      color: $co-green-7
+
+=deco-style-pat-item-bnr-l6 //1c1
+  border: 1px solid $bo-pink-5
+  background-color: $bg-pink-4
+  background-image: url("img/_pat-item/bnr/bg-l-6-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-1-2.png")
+    color: $co-white-1
+
+=deco-style-pat-item-bnr-l7 //1c2
+  border: 1px solid $bo-yellow-12
+  background-color: $bg-yellow-38
+  background-image: url("img/_pat-item/bnr/bg-l-7-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-7-2.png")
+    color: $co-blue-10
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-l8 //1c3
+  border: 1px solid $bo-blue-33
+  background-color: $bg-blue-56
+  background-image: url("img/_pat-item/bnr/bg-l-8-1.png")
+  .mod-bnr-inner
+    border: none
+    background-image: url("img/_pat-item/bnr/bg-l-1-2.png")
+    color: $co-white-1
+
+
+
+
+
+// -------------------------------------
+// pat-item-bnr-pic の共通スタイル
+// -------------------------------------
+=comm-style-pat-item-bnr-pic
+  margin-top: $mt0 //ex-argin対応のためショートハンド不使用
+  padding: 0
+  +common-set-link($co-white-1, $co-white-1, none)
+  .mod-bnr-inner
+    margin: 0
+    padding: 0
+  p //inner2,inner3
+    +common-set-font($fsBnrL, nil, nil, 1.2)
+    +common-set-link($co-white-1, $co-white-1, none)
+    margin: 0
+    word-break: break-all
+
+// -------------------------------------
+//  modu-style-pat-item-bnr-pic
+// -------------------------------------
+//mod-bnr-pic
+=modu-style-pat-item-bnr-pic
+  +border-radius(3px) //common打ち消し
+  background-position: left top
+  background-repeat: repeat-x
+  &:hover p
+    text-decoration: none
+  .mod-bnr-inner
+    +border-radius(3px)
+    display: table
+  .mod-bnr-inner2
+    display: table-cell
+    vertical-align: middle
+    background-repeat: no-repeat
+  .mod-bnr-inner3
+    display: table-cell
+    vertical-align: middle
+    background-repeat: no-repeat
+
+//---------------------------------------------
+// サイド写真付きバナー
+// HTML構造変わったらこっちを使う（2/14）伊藤
+//---------------------------------------------
+// =modu-style-pat-item-bnr-pic-side
+//   +border-radius(0px)
+//   background-position: left top
+//   background-repeat: no-repeat
+//   &:hover p
+//     text-decoration: none
+//   .mod-bnr-inner
+//     +border-radius(0px)
+//     display: table
+//   .mod-bnr-inner2
+//     display: table-cell
+//     vertical-align: middle
+//     background-repeat: no-repeat
+//   .mod-bnr-inner3
+//     display: table-cell
+//     vertical-align: middle
+//     background-repeat: no-repeat
+
+// =modu-style-pat-item-bnr-picr-side
+//   +border-radius(0px)
+//   background-position: left top
+//   background-repeat: no-repeat
+//   &:hover p
+//     text-decoration: none
+//   .mod-bnr-inner
+//     +border-radius(0px)
+//     display: table
+//   .mod-bnr-inner2
+//     display: table-cell
+//     vertical-align: middle
+//     background-repeat: no-repeat
+//   .mod-bnr-inner3
+//     display: table-cell
+//     vertical-align: middle
+//     background-repeat: no-repeat
+
+// -------------------------------------
+//  size-style-pat-item-bnr-pic
+// -------------------------------------
+//mod-bnr-pic
+=size-style-pat-item-bnr-pic
+  min-height: 70px
+  max-height: 70px
+  width: floor(($mainWidth - 40) / 3)
+  height: 70px
+  .mod-bnr-inner
+    min-height: 60px
+    width: 100% //table-cellの横幅
+  .mod-bnr-inner2
+    width: 60px
+  .mod-bnr-inner3
+    width: auto //プロパティ合わせ
+  img
+    max-height: 60px
+    width: 60px
+
+=size-style-pat-item-bnr-pic2
+  overflow: hidden //FFではみ出る対策
+  min-height: 60px
+  max-height: 68px
+  width: 100% //table-cellの横幅
+  height: auto
+  .mod-bnr-inner
+    min-height: 58px
+    width: 100% //table-cellの横幅
+    &:before, x:-moz-any-link
+      //firefox対応　//x:-moz-any-link
+      display: block
+      min-height: 50px
+      width: 0
+      content: ""
+  .mod-bnr-inner2
+    width: 50px
+  .mod-bnr-inner3
+    width: auto //プロパティ合わせ
+  img
+    max-height: 50px
+    width: 50px
+
+
+//---------------------------------------------
+// サイド写真付きバナー
+// HTML構造変わったらこっちを使う（2/14）伊藤
+//---------------------------------------------
+// =size-style-pat-item-bnr-pic-side
+//   min-height: 72px
+//   max-height: 72px
+//   width: $baseSideWidth
+//   height: 72px
+//   .mod-bnr-inner
+//     min-height: 60px
+//     width: 100= //table-cellの横幅
+//   .mod-bnr-inner2
+//     width: 80px
+//   .mod-bnr-inner3
+//     max-width: $baseSideWidth - (5 * 2 + 80 + 5 + 1 * 2)
+//   img
+//     max-height: 60px
+//     width: 80px
+
+// =size-style-pat-item-bnr-picr-side
+//   min-height: 72px
+//   max-height: 72px
+//   width: $baseSideWidth
+//   height: 72px
+//   .mod-bnr-inner
+//     min-height: 60px
+//     width: 100= //table-cellの横幅
+//   .mod-bnr-inner2
+//     max-width: $baseSideWidth - (5 * 2 + 80 + 5 + 1 * 2)
+//   .mod-bnr-inner3
+//     width: 80px
+//   img
+//     max-height: 60px
+//     width: 80px
+
+// -------------------------------------
+//  insz-style-pat-item-bnr-pic
+// -------------------------------------
+=insz-style-pat-item-bnr-pic-k
+  .mod-bnr-inner2
+    padding: 0
+    background-position: left top
+  .mod-bnr-inner3
+    padding: 0 0 0 13px
+    background-position: left top
+
+=insz-style-pat-item-bnr-pic2-k
+  .mod-bnr-inner2
+    padding: 0
+    background-position: left top
+  .mod-bnr-inner3
+    padding: 0 0 0 10px
+    background-position: left top
+
+//---------------------------------------------
+// サイド写真付きバナー
+// HTML構造変わったらこっちを使う（2/14）伊藤
+//---------------------------------------------
+// =insz-style-pat-item-bnr-pic-side-m
+//   .mod-bnr-inner2
+//     padding: 0 8px 0 0
+//   .mod-bnr-inner3
+//     padding: 2px 18px 0 0
+//     background-position: right center
+
+// =insz-style-pat-item-bnr-picr-side-n
+//   .mod-bnr-inner2
+//     padding: 2px 0 0 18px
+//     background-position: left center
+//   .mod-bnr-inner3
+//     padding: 0 0 0 5px
+//     background-position: right center
+
+// -------------------------------------
+//  deco-style-pat-item-bnr-k
+// -------------------------------------
+=deco-style-pat-item-bnr-k1
+  border: 1px solid $bo-blue-26
+  background-color: $bg-blue-28
+  background-image: url("img/_pat-item/bnr/bg-k-1-1.png")
+  .mod-bnr-inner
+    padding: 3px
+    border: 1px solid $bo-blue-5
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k2
+  border: 1px solid $bo-green-11
+  background-color: $bg-green-21
+  background-image: url("img/_pat-item/bnr/bg-k-2-1.png")
+  .mod-bnr-inner
+    padding: 3px
+    border: 1px solid $bo-blue-5
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k3
+  border: 1px solid $bo-orange-17
+  background-color: $bg-orange-22
+  background-image: url("img/_pat-item/bnr/bg-k-3-1.png")
+  .mod-bnr-inner
+    padding: 3px
+    border: 1px solid $bo-orange-12
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k4
+  border: 1px solid $bo-blue-23
+  background-color: $bg-blue-43
+  background-image: url("img/_pat-item/bnr/bg-k-4-1.png")
+  .mod-bnr-inner
+    padding: 4px
+    border: none
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k5
+  border: 1px solid $bo-green-20
+  background-color: $bg-green-29
+  background-image: url("img/_pat-item/bnr/bg-k-5-1.png")
+  .mod-bnr-inner
+    padding: 4px
+    border: none
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k6
+  border: 1px solid $bo-brown-7
+  background-color: $bg-brown-6
+  background-image: url("img/_pat-item/bnr/bg-k-6-1.png")
+  .mod-bnr-inner
+    padding: 4px
+    border: none
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k7
+  border: 1px solid $bo-blue-25
+  background-color: $bg-blue-28
+  background-image: url("img/_pat-item/bnr/bg-k-7-1.png")
+  .mod-bnr-inner
+    padding: 4px
+    border: none
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k8
+  border: 1px solid $bo-green-12
+  background-color: $bg-green-20
+  background-image: url("img/_pat-item/bnr/bg-k-8-1.png")
+  .mod-bnr-inner
+    padding: 4px
+    border: none
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k9
+  border: 1px solid $bo-orange-9
+  background-color: $bg-orange-23
+  background-image: url("img/_pat-item/bnr/bg-k-9-1.png")
+  .mod-bnr-inner
+    padding: 4px
+    border: none
+    color: $co-white-1
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+
+=deco-style-pat-item-bnr-k10
+  border: 1px solid $bo-pink-1
+  background-color: $bg-pink-2
+  background-image: url("img/_pat-item/bnr/bg-k-10-1.png")
+  .mod-bnr-inner
+    padding: 3px
+    border: 1px solid $bo-white-1
+    color: $co-brown-3
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+    a //common打ち消し
+      color: $co-brown-3
+    a:hover
+      color: $co-brown-3
+
+=deco-style-pat-item-bnr-k11
+  border: 1px solid $bo-blue-53
+  background-color: $bg-blue-59
+  background-image: url("img/_pat-item/bnr/bg-k-11-1.png")
+  .mod-bnr-inner
+    padding: 3px
+    border: 1px solid $bo-white-1
+    color: $co-blue-10
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+    a //common打ち消し
+      color: $co-blue-10
+    a:hover
+      color: $co-blue-10
+
+=deco-style-pat-item-bnr-k12
+  border: 1px solid $bo-orange-27
+  background-color: $bg-orange-3
+  background-image: url("img/_pat-item/bnr/bg-k-12-1.png")
+  .mod-bnr-inner
+    padding: 3px
+    border: 1px solid $bo-white-1
+    color: $co-brown-6
+  .mod-bnr-inner2
+    background-image: none
+  .mod-bnr-inner3
+    background-image: none
+    a //common打ち消し
+      color: $co-brown-6
+    a:hover
+      color: $co-brown-6
+
+// -------------------------------------
+// pat-item-bnr-m サイド写真（左）つきバナー
+// HTML構造変わったらこっちを使う（2/14）伊藤
+// -------------------------------------
+// =deco-style-pat-item-bnr-m1 //青
+//   border: none
+//   background-color: transparent
+//   background-image: url("img/_pat-item/bnr/bg-m-1-1.png")
+//   .mod-bnr-inner
+//     padding: 7px 5px 5px
+//     border: none
+//     color: $co-blue-8
+//   .mod-bnr-inner2
+//     background-image: none
+//   .mod-bnr-inner3
+//     background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+//     a //common打ち消し
+//       color: $co-blue-8
+//     a:hover
+//       color: $co-blue-8
+
+// =deco-style-pat-item-bnr-m2//紺
+//   border: none
+//   background-color: transparent
+//   background-image: url("img/_pat-item/bnr/bg-m-2-1.png")
+//   .mod-bnr-inner
+//     padding: 7px 5px 5px
+//     border: none
+//     color: $co-blue-8
+//   .mod-bnr-inner2
+//     background-image: none
+//   .mod-bnr-inner3
+//     background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+//     a //common打ち消し
+//       color: $co-blue-8
+//     a:hover
+//       color: $co-blue-8
+
+// =deco-style-pat-item-bnr-m3 //黄
+//   border: none
+//   background-color: transparent
+//   background-image: url("img/_pat-item/bnr/bg-m-3-1.png")
+//   .mod-bnr-inner
+//     padding: 7px 5px 5px
+//     border: none
+//     color: $co-blue-8
+//   .mod-bnr-inner2
+//     background-image: none
+//   .mod-bnr-inner3
+//     background-image: url("img/_pat-item/bnr/bg-j-3-1.png")
+//     a //common打ち消し
+//       color: $co-blue-8
+//     a:hover
+//       color: $co-blue-8
+
+// -------------------------------------
+// pat-item-bnr-n サイド写真（右）つきバナー
+// HTML構造変わったらこっちを使う（2/14）伊藤
+// -------------------------------------
+// =deco-style-pat-item-bnr-n1 //青
+//   border: none
+//   background-color: transparent
+//   background-image: url("img/_pat-item/bnr/bg-m-1-1.png")
+//   .mod-bnr-inner
+//     padding: 7px 5px 5px
+//     border: none
+//     color: $co-blue-8
+//   .mod-bnr-inner2
+//     background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+//     a //common打ち消し
+//       color: $co-blue-8
+//     a:hover
+//       color: $co-blue-8
+//   .mod-bnr-inner3
+//     background-image: none
+
+// =deco-style-pat-item-bnr-n2 //紺
+//   border: none
+//   background-color: transparent
+//   background-image: url("img/_pat-item/bnr/bg-m-2-1.png")
+//   .mod-bnr-inner
+//     padding: 7px 5px 5px
+//     border: none
+//     color: $co-blue-8
+//   .mod-bnr-inner2
+//     background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+//     a //common打ち消し
+//       color: $co-blue-8
+//     a:hover
+//       color: $co-blue-8
+//   .mod-bnr-inner3
+//     background-image: none
+
+// =deco-style-pat-item-bnr-n3 //黄
+//   border: none
+//   background-color: transparent
+//   background-image: url("img/_pat-item/bnr/bg-m-3-1.png")
+//   .mod-bnr-inner
+//     padding: 7px 5px 5px
+//     border: none
+//     color: $co-blue-8
+//   .mod-bnr-inner2
+//     background-image: url("img/_pat-item/bnr/bg-j-3-1.png")
+//     a //common打ち消し
+//       color: $co-blue-8
+//     a:hover
+//       color: $co-blue-8
+//   .mod-bnr-inner3
+//     background-image: none
+
+
+
+// -------------------------------------
+// pat-item-bnr-pic-side (HTML変わるまでの対応)
+// -------------------------------------
+=comm-style-pat-item-bnr-pic-side
+  +block-style-mod-bnr-hover
+  +box-sizing(border-box)
+  margin-top: $mtLinkSideM //ex-argin対応のためショートハンド不使用
+  padding: 7px 5px 5px
+  +common-set-link($co-white-1, $co-white-1, none)
+  p //inner,inner2
+    +common-set-font($fsBnrL, nil, nil, 1.2)
+    +common-set-link($co-white-1, $co-white-1, none)
+    margin: 0
+    word-break: break-all
+  img
+    vertical-align: bottom
+
+// ---------------------------------------------
+// modu-style (HTML変わるまでの対応)
+// ---------------------------------------------
+=modu-style-pat-item-bnr-pic-side
+  +border-radius(0px)
+  display: table
+  background-position: left top
+  background-repeat: no-repeat
+  &:hover p
+    text-decoration: none
+  .mod-bnr-inner
+    display: table-cell
+    vertical-align: middle
+    background-repeat: no-repeat
+  .mod-bnr-inner2
+    display: table-cell
+    vertical-align: middle
+    background-repeat: no-repeat
+
+=modu-style-pat-item-bnr-picr-side
+  +border-radius(0px)
+  display: table
+  background-position: left top
+  background-repeat: no-repeat
+  &:hover p
+    text-decoration: none
+  .mod-bnr-inner
+    display: table-cell
+    vertical-align: middle
+    background-repeat: no-repeat
+  .mod-bnr-inner2
+    display: table-cell
+    vertical-align: middle
+    background-repeat: no-repeat
+
+//---------------------------------------------
+// size-style (HTML変わるまでの対応)
+//---------------------------------------------
+=size-style-pat-item-bnr-pic-side
+  min-height: 72px
+  max-height: 72px
+  width: 100% //table-cellの横幅
+  height: 72px
+  .mod-bnr-inner
+    width: 80px
+  .mod-bnr-inner2
+    min-height: 60px
+    max-width: $baseSideWidth - (5 * 2 + 80 + 5 + 1 * 2)
+  img
+    max-height: 60px
+    width: 80px
+
+=size-style-pat-item-bnr-picr-side
+  min-height: 72px
+  max-height: 72px
+  width: 100% //table-cellの横幅
+  height: 72px
+  .mod-bnr-inner
+    min-height: 60px
+    max-width: $baseSideWidth - (5 * 2 + 80 + 5 + 1 * 2)
+  .mod-bnr-inner2
+    width: 80px
+  img
+    max-height: 60px
+    width: 80px
+
+//---------------------------------------------
+// insz-style (HTML変わるまでの対応)
+//---------------------------------------------
+=insz-style-pat-item-bnr-pic-side-m
+  .mod-bnr-inner
+    padding: 0 8px 0 0
+    background-position: left top
+  .mod-bnr-inner2
+    padding: 2px 18px 0 0
+    background-position: right center
+
+=insz-style-pat-item-bnr-picr-side-n
+  .mod-bnr-inner
+    padding: 2px 0 0 18px
+    background-position: left center
+  .mod-bnr-inner2
+    padding: 0 0 0 5px
+    background-position: left top
+
+//---------------------------------------------
+// deco-style (HTML変わるまでの対応)
+//---------------------------------------------
+=deco-style-pat-item-bnr-m1 //青
+  border: none
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-m-1-1.png")
+  color: $co-blue-8
+  .mod-bnr-inner
+    background-image: none
+  .mod-bnr-inner2
+    background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+
+=deco-style-pat-item-bnr-m2//紺
+  border: none
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-m-2-1.png")
+  color: $co-blue-8
+  .mod-bnr-inner
+    background-image: none
+  .mod-bnr-inner2
+    background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+
+=deco-style-pat-item-bnr-m3 //黄
+  border: none
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-m-3-1.png")
+  color: $co-blue-8
+  .mod-bnr-inner
+    background-image: none
+  .mod-bnr-inner2
+    background-image: url("img/_pat-item/bnr/bg-j-3-1.png")
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+
+
+=deco-style-pat-item-bnr-n1 //青
+  border: none
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-m-1-1.png")
+  color: $co-blue-8
+  .mod-bnr-inner
+    background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+  .mod-bnr-inner2
+    background-image: none
+
+=deco-style-pat-item-bnr-n2 //紺
+  border: none
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-m-2-1.png")
+  color: $co-blue-8
+  .mod-bnr-inner
+    background-image: url("img/_pat-item/bnr/bg-j-2-1.png")
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+  .mod-bnr-inner2
+    background-image: none
+
+=deco-style-pat-item-bnr-n3 //黄
+  border: none
+  background-color: transparent
+  background-image: url("img/_pat-item/bnr/bg-m-3-1.png")
+  color: $co-blue-8
+  .mod-bnr-inner
+    background-image: url("img/_pat-item/bnr/bg-j-3-1.png")
+    a //common打ち消し
+      color: $co-blue-8
+    a:hover
+      color: $co-blue-8
+  .mod-bnr-inner2
+    background-image: none

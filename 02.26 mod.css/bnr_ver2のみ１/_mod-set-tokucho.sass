@@ -1,0 +1,212 @@
+@charset "UTF-8"
+
+@import ../../../pc/pc-style/mod-set-tokucho-style
+
+// -----------------------------------
+//
+// mod-set-tokucho の紐付けモジュール
+//
+// -----------------------------------
+
+// -----------------------------------
+// part-main-274
+// 特徴　枠付き部品
+// -----------------------------------
+
+.mod-set-tokucho-bunsyo
+  +comm-style-mod-set-tokucho-bunsyo
+  @extend %first-child-box-in2
+  .ex-style_01A1 &
+    // +pat-item-waku-maru-futo-1
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-b1
+  .ex-style_01A2 &
+    // +pat-item-waku-maru-futo-2
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-b2
+  .ex-style_01A3 &
+    // +pat-item-waku-maru-futo-3
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-b3
+  .ex-style_01B1 &
+    // +pat-item-waku-maru-simple-1px-grade-1
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-c1
+  .ex-style_01B2 &
+    // +pat-item-waku-maru-simple-1px-grade-2
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-c2
+  .ex-style_01B3 &
+    // +pat-item-waku-maru-simple-1px-grade-3
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-c3
+  .ex-style_01C1 &
+    // +pat-item-waku-maru-image-1
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-d1
+  .ex-style_01C2 &
+    // +pat-item-waku-maru-image-2
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-d2
+  .ex-style_01C3 &
+    // +pat-item-waku-maru-image-3
+    .mod-bnr_ver2
+      +pat-item-bnr-for-2col-d3
+
+// -----------------------------------
+// part-main-276
+// 特徴 <装飾> -２
+// -----------------------------------
+
+// .mod-set-tokucho-h
+//   +comm-style-mod-set-tokucho-2
+//   .ex-style_01A1 &
+//     +pat-item-waku-simple-1px-10
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-none-2
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-2
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia2
+//     +deco-style-mod-set-tokucho-h-1
+
+//   .ex-style_01A2 &
+//     +pat-item-waku-simple-1px-10
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-none-2
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-2
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia2
+//     +deco-style-mod-set-tokucho-h-1
+
+//   .ex-style_01A3 &
+//     +pat-item-waku-simple-1px-11
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-none-2
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-3
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia1
+//     +deco-style-mod-set-tokucho-h-1
+
+//   .ex-style_01B1 &
+//     +pat-item-waku-none-grade-1
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-none-3
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-7
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia4
+//     +deco-style-mod-set-tokucho-h-2
+
+//   .ex-style_01B2 &
+//     +pat-item-waku-none-grade-2
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-none-4
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-8
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia4
+//     +deco-style-mod-set-tokucho-h-2
+
+//   .ex-style_01B3 &
+//     +pat-item-waku-none-grade-3
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-none-5
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-9
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia4
+//     +deco-style-mod-set-tokucho-h-2
+
+//   .ex-style_01C1 &
+//     +pat-item-waku-repeat-1
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-board-1
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-10
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia3
+//     +deco-style-mod-set-tokucho-h-3
+
+//   .ex-style_01C2 &
+//     +pat-item-waku-repeat-2
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-board-2
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-11
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia3
+//     +deco-style-mod-set-tokucho-h-3
+
+//   .ex-style_01C3 &
+//     +pat-item-waku-repeat-3
+//     > .mod-box-inner
+//       > .mod-box-inner2
+//         > .mod-box-in2
+//           +pat-item-waku-board-3
+//     .mod-set-h4
+//       .mod-box-in2
+//         +pat-item-waku-midashi-10
+//       .mod-h_4_ver2
+//         +pat-item-h4-bgp-ia3
+//     +deco-style-mod-set-tokucho-h-3
+
+// // -----------------------------------
+// // part-main-278
+// // 特徴 <画像>
+// // -----------------------------------
+
+// .mod-set-tokucho-pic
+//   .ex-style_01A1 &
+//     +pat-item-waku-pic-1
+//     +deco-style-mod-set-tokucho-pic-1
+//   .ex-style_01A2 &
+//     +pat-item-waku-pic-2
+//     +deco-style-mod-set-tokucho-pic-1
+//   .ex-style_01A3 &
+//     +pat-item-waku-pic-3
+//     +deco-style-mod-set-tokucho-pic-1
+//   .ex-style_01B1 &
+//     +pat-item-waku-pic-4
+//     +deco-style-mod-set-tokucho-pic-2
+//   .ex-style_01B2 &
+//     +pat-item-waku-pic-5
+//     +deco-style-mod-set-tokucho-pic-2
+//   .ex-style_01B3 &
+//     +pat-item-waku-pic-6
+//     +deco-style-mod-set-tokucho-pic-2
+//   .ex-style_01C1 &
+//     +pat-item-waku-pic-7
+//     +deco-style-mod-set-tokucho-pic-2
+//   .ex-style_01C2 &
+//     +pat-item-waku-pic-8
+//     +deco-style-mod-set-tokucho-pic-2
+//   .ex-style_01C3 &
+//     +pat-item-waku-pic-9
+//     +deco-style-mod-set-tokucho-pic-2
