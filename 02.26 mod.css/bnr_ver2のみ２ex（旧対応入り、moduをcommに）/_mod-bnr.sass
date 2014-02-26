@@ -1,0 +1,749 @@
+@charset "UTF-8"
+
+
+// -------------------------------------
+//block-style
+// -------------------------------------
+%block-style-mod-bnr-hover
+  //hover時の挙動
+  &:hover
+    opacity: 0.80
+    -ms-filter: "alpha(opacity%80)"
+  a:hover, a:hover p
+    text-decoration: none
+
+
+// -------------------------------------
+// pat-item-bnr の共通スタイル
+// -------------------------------------
+=comm-style-pat-item-bnr
+  +border-radius
+  margin-top: $mtLinkM //ex-argin対応のためショートハンド不使用  padding: 0
+  +common-set-link($co-white-1, $co-white-1, none)
+  background-position: left top
+  background-repeat: repeat-x
+  .mod-bnr-inner //, .mod-bnr-inner2, .mod-bnr-inner-2, .mod-bnr-inner2-2 //bnr-set4,5(旧mod)対応
+    +border-radius
+    +common-set-link($co-white-1, $co-white-1, none)
+    margin: 0
+    padding: 0
+    color: $co-white-1
+    background-repeat: no-repeat
+    p
+      margin: 0
+      +common-set-font($fsBnrM, nil, nil, 1.4)
+  &.ex-align-center //ショートハンド、だめ、絶対
+    margin-right: auto
+    margin-left: auto
+    text-align: left
+  &.ex-align-right //ショートハンド、だめ、絶対
+    margin-right: 0
+    margin-left: auto
+    text-align: left
+
+
+//##################################################
+//  mod-bnr_ver2
+//##################################################
+.mod-bnr_ver2
+  +comm-style-pat-item-bnr
+  @extend %block-style-mod-bnr-hover
+  .ex-style_01A1 &,
+  .ex-style_02A1 &
+    +pat-item-bnr-b1
+  .ex-style_01A2 &,
+  .ex-style_02A2 &
+    +pat-item-bnr-b2
+  .ex-style_01A3 &,
+  .ex-style_02A3 &
+    +pat-item-bnr-b3
+  .ex-style_01B1 &,
+  .ex-style_02B1 &
+    +pat-item-bnr-c1
+  .ex-style_01B2 &,
+  .ex-style_02B2 &
+    +pat-item-bnr-c2
+  .ex-style_01B3 &,
+  .ex-style_02B3 &
+    +pat-item-bnr-c3
+  .ex-style_01C1 &,
+  .ex-style_02C1 &
+    +pat-item-bnr-d1
+    background-repeat: no-repeat
+  .ex-style_01C2 &,
+  .ex-style_02C2 &
+    +pat-item-bnr-d2
+    background-repeat: no-repeat
+  .ex-style_01C3 &,
+  .ex-style_02C3 &
+    +pat-item-bnr-d3
+    background-repeat: no-repeat
+
+//##################################################
+//  mod-bnr-pic
+//##################################################
+// .mod-bnr-pic
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-pic-k1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-pic-k2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-pic-k3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-pic-k4
+//   .ex-style_01B2 &
+//     +pat-item-bnr-pic-k5
+//   .ex-style_01B3 &
+//     +pat-item-bnr-pic-k6
+//   .ex-style_01C1 &
+//     +pat-item-bnr-pic-k7
+//   .ex-style_01C2 &
+//     +pat-item-bnr-pic-k8
+//   .ex-style_01C3 &
+//     +pat-item-bnr-pic-k9
+// //##################################################
+// //  mod-bnr-map
+// //##################################################
+// .mod-bnr-map
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-map-j1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-map-j2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-map-j3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-map-j1
+//   .ex-style_01B2 &
+//     +pat-item-bnr-map-j1
+//   .ex-style_01B3 &
+//     +pat-item-bnr-map-j1
+//   .ex-style_01C1 &
+//     +pat-item-bnr-map-j1
+//   .ex-style_01C2 &
+//     +pat-item-bnr-map-j1
+//   .ex-style_01C3 &
+//     +pat-item-bnr-map-j1
+
+// //##################################################
+// //  mod-bnr-2gyo
+// //##################################################
+// .mod-bnr-2gyo
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-2gyo-a1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-2gyo-a2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-2gyo-a3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-2gyo-e1
+//   .ex-style_01B2 &
+//     +pat-item-bnr-2gyo-e2
+//   .ex-style_01B3 &
+//     +pat-item-bnr-2gyo-e3
+//   .ex-style_01C1 &
+//     +pat-item-bnr-2gyo-d4
+//   .ex-style_01C2 &
+//     +pat-item-bnr-2gyo-d5
+//   .ex-style_01C3 &
+//     +pat-item-bnr-2gyo-d6
+
+// //##################################################
+// // mod-bnr-side
+// //  mod-bnr-1st-side
+// //  mod-bnr-2nd-side
+// //##################################################
+// .mod-bnr-side,
+// .mod-bnr-1st-side,
+// .mod-bnr-2nd-side
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-side-f1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-side-f2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-side-f3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-side-f1
+//   .ex-style_01B2 &
+//     +pat-item-bnr-side-f2
+//   .ex-style_01B3 &
+//     +pat-item-bnr-side-f3
+//   .ex-style_01C1 &
+//     +pat-item-bnr-side-f1
+//   .ex-style_01C2 &
+//     +pat-item-bnr-side-f2
+//   .ex-style_01C3 &
+//     +pat-item-bnr-side-f3
+
+// //##################################################
+// //  .mod-bnr-pic-side
+// //##################################################
+// .mod-bnr-pic-side
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-pic-side-m1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-pic-side-m2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-pic-side-m3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-pic-side-m1
+//   .ex-style_01B2 &
+//     +pat-item-bnr-pic-side-m2
+//   .ex-style_01B3 &
+//     +pat-item-bnr-pic-side-m3
+//   .ex-style_01C1 &
+//     +pat-item-bnr-pic-side-m1
+//   .ex-style_01C2 &
+//     +pat-item-bnr-pic-side-m2
+//   .ex-style_01C3 &
+//     +pat-item-bnr-pic-side-m3
+
+// .mod-bnr-picr-side
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-picr-side-n1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-picr-side-n2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-picr-side-n3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-picr-side-n1
+//   .ex-style_01B2 &
+//     +pat-item-bnr-picr-side-n2
+//   .ex-style_01B3 &
+//     +pat-item-bnr-picr-side-n3
+//   .ex-style_01C1 &
+//     +pat-item-bnr-picr-side-n1
+//   .ex-style_01C2 &
+//     +pat-item-bnr-picr-side-n2
+//   .ex-style_01C3 &
+//     +pat-item-bnr-picr-side-n3
+
+// //##################################################
+// //  mod-bnr-header
+// //##################################################
+// .mod-bnr-sitename
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-1st-header-b16
+//   .ex-style_01A2 &
+//     +pat-item-bnr-1st-header-b17
+//   .ex-style_01A3 &
+//     +pat-item-bnr-1st-header-b18
+//   .ex-style_01B1 &
+//     +pat-item-bnr-1st-header-b19
+//   .ex-style_01B2 &
+//     +pat-item-bnr-1st-header-b20
+//   .ex-style_01B3 &
+//     +pat-item-bnr-1st-header-b21
+//   .ex-style_01C1 &
+//     +pat-item-bnr-1st-header-d15
+//   .ex-style_01C2 &
+//     +pat-item-bnr-1st-header-d16
+//   .ex-style_01C3 &
+//     +pat-item-bnr-1st-header-d17
+
+// .mod-bnr2-sitename
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-2nd-header-b22
+//   .ex-style_01A2 &
+//     +pat-item-bnr-2nd-header-b23
+//   .ex-style_01A3 &
+//     +pat-item-bnr-2nd-header-b24
+//   .ex-style_01B1 &
+//     +pat-item-bnr-2nd-header-b25
+//   .ex-style_01B2 &
+//     +pat-item-bnr-2nd-header-b25
+//   .ex-style_01B3 &
+//     +pat-item-bnr-2nd-header-b26
+//   .ex-style_01C1 &
+//     +pat-item-bnr-2nd-header-d18
+//   .ex-style_01C2 &
+//     +pat-item-bnr-2nd-header-d19
+//   .ex-style_01C3 &
+//     +pat-item-bnr-2nd-header-d20
+
+// .mod-bnr3-sitename
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-header-b16
+//   .ex-style_01A2 &
+//     +pat-item-bnr-header-b17
+//   .ex-style_01A3 &
+//     +pat-item-bnr-header-b18
+//   .ex-style_01B1 &
+//     +pat-item-bnr-header-b19
+//   .ex-style_01B2 &
+//     +pat-item-bnr-header-b20
+//   .ex-style_01B3 &
+//     +pat-item-bnr-header-b21
+//   .ex-style_01C1 &
+//     +pat-item-bnr-header-d15
+//   .ex-style_01C2 &
+//     +pat-item-bnr-header-d16
+//   .ex-style_01C3 &
+//     +pat-item-bnr-header-d17
+
+
+// //##################################################
+// //  mod-bnr-footer
+// //##################################################
+// .mod-bnr-footer
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-footer-b4
+//   .ex-style_01A2 &
+//     +pat-item-bnr-footer-b2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-footer-b7
+//   .ex-style_01B1 &
+//     +pat-item-bnr-footer-b8
+//   .ex-style_01B2 &
+//     +pat-item-bnr-footer-b8
+//   .ex-style_01B3 &
+//     +pat-item-bnr-footer-b9
+//   .ex-style_01C1 &
+//     +pat-item-bnr-footer-d7
+//   .ex-style_01C2 &
+//     +pat-item-bnr-footer-d8
+//   .ex-style_01C3 &
+//     +pat-item-bnr-footer-d7
+
+
+
+
+
+
+
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+// //現行モジュールへのスタイル取り込み
+// //＊＊＊＊＊＊＊＊＊＊＊＊
+.mod-bnr
+  +comm-style-pat-item-bnr
+  @extend %block-style-mod-bnr-hover
+  .ex-style_01A1 &,
+  .ex-style_a1A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_i1A1 &,
+  .ex-style_o1A1 &,
+  .ex-style_p1A1 &,
+  .ex-style_p2A1 &,
+  .ex-style_q1A1 &,
+  .ex-style_q2A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_w1A1 &
+    +pat-item-bnr-for-2col-b1
+  .ex-style_01A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &
+    +pat-item-bnr-for-2col-b2
+  .ex-style_01A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &
+    +pat-item-bnr-for-2col-b3
+  .ex-style_01B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_q1B1 &
+    +pat-item-bnr-for-2col-c1
+  .ex-style_01B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_q1B2 &
+    +pat-item-bnr-for-2col-c2
+  .ex-style_01B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_q1B3 &
+    +pat-item-bnr-for-2col-c3
+  .ex-style_01C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_v1C1 &
+    +pat-item-bnr-for-2col-d1
+    background-repeat: no-repeat
+  .ex-style_01C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_v1C2 &
+    +pat-item-bnr-for-2col-d2
+    background-repeat: no-repeat
+  .ex-style_01C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_v1C3 &
+    +pat-item-bnr-for-2col-d3
+    background-repeat: no-repeat
+
+.mod-bnr7
+  +comm-style-pat-item-bnr
+  @extend %block-style-mod-bnr-hover
+  .ex-style_01A1 &,
+  .ex-style_i1A1 &,
+  .ex-style_o1A1 &
+    +pat-item-bnr-for-4col-b1
+  .ex-style_01A2 &,
+  .ex-style_i1A2 &
+    +pat-item-bnr-for-4col-b2
+  .ex-style_01A3 &,
+  .ex-style_i1A3 &
+    +pat-item-bnr-for-4col-b3
+  .ex-style_01B1 &,
+  .ex-style_i1B1 &
+    +pat-item-bnr-for-4col-c1
+  .ex-style_01B2 &,
+  .ex-style_i1B2 &
+    +pat-item-bnr-for-4col-c2
+  .ex-style_01B1 &,
+  .ex-style_01B2 &,
+  .ex-style_01B3 &,
+  .ex-style_i1B3 &
+    +pat-item-bnr-for-4col-c3
+  .ex-style_01C1 &,
+  .ex-style_i1C1 &
+    +pat-item-bnr-for-4col-d1
+    background-repeat: no-repeat
+  .ex-style_01C2 &,
+  .ex-style_i1C2 &
+    +pat-item-bnr-for-4col-d2
+    background-repeat: no-repeat
+  .ex-style_01C3 &,
+  .ex-style_i1C3 &
+    +pat-item-bnr-for-4col-d3
+    background-repeat: no-repeat
+
+// .mod-bnr11
+//   @extend .mod-bnr-side
+
+// .mod-bnr13
+//   @extend .mod-bnr-picr-side
+
+// .mod-bnr14
+//   @extend .mod-bnr-pic-side
+
+// .mod-bnr17
+//   @extend .mod-bnr-map
+
+.mod-bnr18
+  +comm-style-pat-item-bnr
+  @extend %block-style-mod-bnr-hover
+  .ex-style_01A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_p1A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_w1A1 &
+    +pat-item-bnr-for-2colin3col-b1
+  .ex-style_01A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_v1A2 &
+    +pat-item-bnr-for-2colin3col-b2
+  .ex-style_01A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_v1A3 &
+    +pat-item-bnr-for-2colin3col-b3
+  .ex-style_01B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_v1B1 &
+    +pat-item-bnr-for-2colin3col-c1
+  .ex-style_01B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_v1B2 &
+    +pat-item-bnr-for-2colin3col-c2
+  .ex-style_01B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_v1B3 &
+    +pat-item-bnr-for-2colin3col-c3
+  .ex-style_01C1 &,
+  .ex-style_c1C1 &,
+  .ex-style_v1C1 &
+    +pat-item-bnr-for-2colin3col-d1
+    background-repeat: no-repeat
+  .ex-style_01C2 &,
+  .ex-style_c1C2 &,
+  .ex-style_v1C2 &
+    +pat-item-bnr-for-2colin3col-d2
+    background-repeat: no-repeat
+  .ex-style_01C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_v1C3 &
+    +pat-item-bnr-for-2colin3col-d3
+    background-repeat: no-repeat
+
+.mod-bnr23
+  +comm-style-pat-item-bnr
+  @extend %block-style-mod-bnr-hover
+  .ex-style_01A1 &,
+  .ex-style_02A1 &,
+  .ex-style_a1A1 &,
+  .ex-style_b1A1 &,
+  .ex-style_c1A1 &,
+  .ex-style_d1A1 &,
+  .ex-style_g1A1 &,
+  .ex-style_g2A1 &,
+  .ex-style_g4A1 &,
+  .ex-style_g4A3 &,
+  .ex-style_i1A1 &,
+  .ex-style_l1A1 &,
+  .ex-style_m1A1 &,
+  .ex-style_o1A1 &,
+  .ex-style_p1A1 &,
+  .ex-style_p2A1 &,
+  .ex-style_q1A1 &,
+  .ex-style_q2A1 &,
+  .ex-style_r1A1 &,
+  .ex-style_t1A1 &,
+  .ex-style_t5A1 &,
+  .ex-style_v1A1 &,
+  .ex-style_w1A1 &,
+  .ex-style_x3A1 &,
+  .ex-style_z1A1 &
+    +pat-item-bnr-b1
+  .ex-style_01A2 &,
+  .ex-style_02A2 &,
+  .ex-style_c1A2 &,
+  .ex-style_d1A2 &,
+  .ex-style_g4A2 &,
+  .ex-style_i1A2 &,
+  .ex-style_q1A2 &,
+  .ex-style_v1A2 &
+    +pat-item-bnr-b2
+  .ex-style_01A3 &,
+  .ex-style_02A3 &,
+  .ex-style_c1A3 &,
+  .ex-style_d1A3 &,
+  .ex-style_i1A3 &,
+  .ex-style_q1A3 &,
+  .ex-style_v1A3 &
+    +pat-item-bnr-b3
+  .ex-style_01B1 &,
+  .ex-style_02B1 &,
+  .ex-style_c1B1 &,
+  .ex-style_d1B1 &,
+  .ex-style_g4B1 &,
+  .ex-style_i1B1 &,
+  .ex-style_v1B1 &,
+  .ex-style_q1B1 &
+    +pat-item-bnr-c1
+  .ex-style_01B2 &,
+  .ex-style_02B2 &,
+  .ex-style_c1B2 &,
+  .ex-style_d1B2 &,
+  .ex-style_g4B2 &,
+  .ex-style_i1B2 &,
+  .ex-style_v1B2 &,
+  .ex-style_q1B2 &
+    +pat-item-bnr-c2
+  .ex-style_01B3 &,
+  .ex-style_02B3 &,
+  .ex-style_c1B3 &,
+  .ex-style_d1B3 &,
+  .ex-style_g4B3 &,
+  .ex-style_i1B3 &,
+  .ex-style_v1B3 &,
+  .ex-style_q1B3 &
+    +pat-item-bnr-c3
+  .ex-style_01C1 &,
+  .ex-style_02C1 &,
+  .ex-style_d1C1 &,
+  .ex-style_g4C1 &,
+  .ex-style_i1C1 &,
+  .ex-style_q1C1 &,
+  .ex-style_v1C1 &
+    +pat-item-bnr-d1
+    background-repeat: no-repeat
+  .ex-style_01C2 &,
+  .ex-style_02C2 &,
+  .ex-style_d1C2 &,
+  .ex-style_g4C2 &,
+  .ex-style_i1C2 &,
+  .ex-style_q1C2 &,
+  .ex-style_v1C2 &
+    +pat-item-bnr-d2
+    background-repeat: no-repeat
+  .ex-style_01C3 &,
+  .ex-style_02C3 &,
+  .ex-style_c1C3 &,
+  .ex-style_d1C3 &,
+  .ex-style_g4C3 &,
+  .ex-style_i1C3 &,
+  .ex-style_q1C3 &,
+  .ex-style_v1C3 &
+    +pat-item-bnr-d3
+    background-repeat: no-repeat
+
+// .mod-bnr25
+//   @extend .mod-bnr
+
+// // .mod-bnr29
+// //   @extend .mod-bnr-header
+
+// // .mod-bnr30
+// //   @extend .mod-bnr-header2
+
+// .mod-bnr31
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-side2-b4
+//   .ex-style_01A2 &
+//     +pat-item-bnr-side2-b5
+//   .ex-style_01A3 &
+//     +pat-item-bnr-side2-b6
+//   .ex-style_01B1 &
+//     +pat-item-bnr-side2-b4
+//   .ex-style_01B2 &
+//     +pat-item-bnr-side2-b5
+//   .ex-style_01B3 &
+//     +pat-item-bnr-side2-b6
+//   .ex-style_01C1 &
+//     +pat-item-bnr-side2-b4
+//   .ex-style_01C2 &
+//     +pat-item-bnr-side2-b5
+//   .ex-style_01C3 &
+//     +pat-item-bnr-side2-b6
+
+// .mod-bnr32
+//   @extend %block-style-mod-bnr-hover
+//   .ex-style_01A1 &
+//     +pat-item-bnr-header2-g1
+//   .ex-style_01A2 &
+//     +pat-item-bnr-header2-g2
+//   .ex-style_01A3 &
+//     +pat-item-bnr-header2-g3
+//   .ex-style_01B1 &
+//     +pat-item-bnr-header2-g4
+//   .ex-style_01B2 &
+//     +pat-item-bnr-header2-g5
+//   .ex-style_01B3 &
+//     +pat-item-bnr-header2-g6
+//   .ex-style_01C1 &
+//     +pat-item-bnr-header2-g7
+//   .ex-style_01C2 &
+//     +pat-item-bnr-header2-g8
+//   .ex-style_01C3 &
+//     +pat-item-bnr-header2-g9
+
+.mod-bnr33
+  @extend %block-style-mod-bnr-hover
+  .ex-style_01A1 &,
+  .ex-style_t5A1 &
+    +pat-item-bnr2-h1
+  .ex-style_01A2 &
+    +pat-item-bnr2-h2
+  .ex-style_01A3 &
+    +pat-item-bnr2-h3
+  .ex-style_01B1 &
+    +pat-item-bnr2-h4
+  .ex-style_01B2 &
+    +pat-item-bnr2-h5
+  .ex-style_01B3 &
+    +pat-item-bnr2-h6
+  .ex-style_01C1 &
+    +pat-item-bnr2-i1
+    background-position: left -1px
+    background-repeat: no-repeat
+  .ex-style_01C2 &
+    +pat-item-bnr2-i2
+    background-position: left -1px
+    background-repeat: no-repeat
+  .ex-style_01C3 &
+    +pat-item-bnr2-i3
+    background-position: left -1px
+    background-repeat: no-repeat
+
+// .mod-bnr34
+//   @extend .mod-bnr-footer
+
+// .mod-bnr36
+//   @extend .mod-bnr-pic
+
+// // .mod-bnr37
+// //   @extend .mod-bnr
+
+// .mod-bnr-set4
+//   @extend %cf
+//   .mod-bnr-inner
+//     @extend %block-style-mod-bnr-hover
+//     float: left
+//     margin: 20px 9px 0 9px
+//     .ex-style_01A1 &
+//       +pat-item-bnr-2gyo-a1
+//     .ex-style_01A2 &
+//       +pat-item-bnr-2gyo-a2
+//     .ex-style_01A3 &
+//       +pat-item-bnr-2gyo-a3
+//     .ex-style_01B1 &
+//       +pat-item-bnr-2gyo-e1
+//     .ex-style_01B2 &
+//       +pat-item-bnr-2gyo-e2
+//     .ex-style_01B3 &
+//       +pat-item-bnr-2gyo-e3
+//     .ex-style_01C1 &
+//       +pat-item-bnr-2gyo-d4
+//     .ex-style_01C2 &
+//       +pat-item-bnr-2gyo-d5
+//     .ex-style_01C3 &
+//       +pat-item-bnr-2gyo-d6
+
+// .mod-bnr-set5
+//   @extend %cf
+//   position: absolute
+//   bottom: 0px
+//   .mod-bnr-inner
+//     @extend %block-style-mod-bnr-hover
+//     float: left
+//     margin-right: 10px
+//   .mod-bnr-inner2
+//     @extend %block-style-mod-bnr-hover
+//     float: right
+//     text-align: left
+//   .ex-style_01A1 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-b1
+//   .ex-style_01A2 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-b10
+//   .ex-style_01A3 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-b6
+//   .ex-style_01B1 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-b11
+//   .ex-style_01B2 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-b12
+//   .ex-style_01B3 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-b13
+//   .ex-style_01C1 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-d9
+//   .ex-style_01C2 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-d10
+//   .ex-style_01C3 &
+//     .mod-bnr-inner, .mod-bnr-inner2
+//       +pat-item-bnr-footer2-d11
