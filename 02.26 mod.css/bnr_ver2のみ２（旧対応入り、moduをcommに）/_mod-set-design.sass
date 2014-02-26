@@ -1,0 +1,468 @@
+@charset "UTF-8"
+
+@import ../../../pc/pc-style/mod-set-design-style
+// @import ../../../pc/design/pat-design-common
+
+// -----------------------------------
+//
+// mod-set-design
+//
+// -----------------------------------
+
+// -----------------------------------
+// part-main-275
+// -----------------------------------
+
+// .mod-set-design
+//   +comm-style-mod-set-design
+//   .ex-style_01A1 &
+//     +pat-design-common-1
+//   .ex-style_01A2 &
+//     +pat-design-common-2
+//   .ex-style_01A3 &
+//     +pat-design-common-3
+//   .ex-style_01B1 &
+//     +pat-design-common-4
+//   .ex-style_01B2 &
+//     +pat-design-common-5
+//   .ex-style_01B3 &
+//     +pat-design-common-6
+//   .ex-style_01C1 &
+//     +pat-design-common-7
+//   .ex-style_01C2 &
+//     +pat-design-common-8
+//   .ex-style_01C3 &
+//     +pat-design-common-9
+
+// .mod-set-design2
+//   +comm-style-mod-set-design2
+//   .ex-style_01A1 &
+//     //
+//   .ex-style_01A2 &
+//     //
+//   .ex-style_01A3 &
+//     //
+//   .ex-style_01B1 &
+//     //
+//   .ex-style_01B2 &
+//     //
+//   .ex-style_01B3 &
+//     //
+//   .ex-style_01C1 &
+//     .mod-ul_ver2
+//       margin: 10px 0 0 0
+//   .ex-style_01C2 &
+//     .mod-ul_ver2
+//       margin: 10px 0 0 0
+//   .ex-style_01C3 &
+//     .mod-ul_ver2
+//       margin: 10px 0 0 0
+
+.mod-set-design3
+  +comm-style-mod-set-design3
+  +modu-style-mod-set-design3
+  @extend %first-child-box-in2
+  .ex-style_01A1 &
+    // +pat-item-waku-maru-2ju-1
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-ya1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-b14
+    +deco-style01A1-mod-set-design3
+  .ex-style_01A1.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 68)) / 2)
+  .ex-style_01A1.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 68)) / 2)
+  .ex-style_01A2 &
+    // +pat-item-waku-maru-2ju-2
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-ya2
+    .mod-bnr_ver2
+      +pat-item-bnr-box-b15
+    +deco-style01A2-mod-set-design3
+  .ex-style_01A2.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 68)) / 2)
+  .ex-style_01A2.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 68)) / 2)
+  .ex-style_01A3 &
+    // +pat-item-waku-maru-2ju-3
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-ya3
+    .mod-bnr_ver2
+      +pat-item-bnr-box-b14
+    +deco-style01A3-mod-set-design3
+  .ex-style_01A3.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 68)) / 2)
+  .ex-style_01A3.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 68)) / 2)
+  .ex-style_01B1 &
+    // +pat-item-waku-jouge-beta-1
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yb1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-c4
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver
+    //   +pat-item-link-box-a7
+    +deco-style01B1-mod-set-design3
+  .ex-style_01B1.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 86)) / 2)
+  .ex-style_01B1.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 86)) / 2)
+  .ex-style_01B2 &
+    // +pat-item-waku-jouge-beta-2
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yb1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-c5
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver
+    //   +pat-item-link-box-a8
+    +deco-style01B2-mod-set-design3
+  .ex-style_01B2.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 86)) / 2)
+  .ex-style_01B2.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 86)) / 2)
+  .ex-style_01B3 &
+    // +pat-item-waku-jouge-beta-3
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yb2
+    .mod-bnr_ver2
+      +pat-item-bnr-box-c6
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver
+    //   +pat-item-link-box-a9
+    +deco-style01B3-mod-set-design3
+  .ex-style_01B3.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 86)) / 2)
+  .ex-style_01B3.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 86)) / 2)
+  .ex-style_01C1 &
+    // +pat-item-waku-grade-border-ue-3px-1
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yc1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-d12
+    +deco-style01C1-mod-set-design3
+  .ex-style_01C1.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 90)) / 2)
+  .ex-style_01C1.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 90)) / 2)
+  .ex-style_01C2 &
+    // +pat-item-waku-grade-border-ue-3px-2
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yc2
+    .mod-bnr_ver2
+      +pat-item-bnr-box-d13
+    +deco-style01C2-mod-set-design3
+  .ex-style_01C2.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 90)) / 2)
+  .ex-style_01C2.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 90)) / 2)
+  .ex-style_01C3 &
+    // +pat-item-waku-grade-border-ue-3px-3
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yc3
+    .mod-bnr_ver2
+      +pat-item-bnr-box-d14
+    +deco-style01C3-mod-set-design3
+  .ex-style_01C3.ex-imgSize_2SS &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.23 + 90)) / 2)
+  .ex-style_01C3.ex-imgSize_2S &
+    .mod-2col50
+      > .mod-2col-inner, > .mod-2col-inner2
+        width: floor(($mainWidth - ($mainWidth * 0.31 + 90)) / 2)
+
+.mod-set-design-2col
+  +comm-style-mod-set-design
+  +modu-style-mod-set-design-2col
+  .ex-style_01A1 &
+    // .mod-2col-wrap > div > div
+    //   +pat-item-waku-maru-2ju-1
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-ya1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-b14
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a1
+    +deco-style01A1-mod-set-design-2col
+  .ex-style_01A2 &
+    // .mod-2col-wrap > div > div
+    //   +pat-item-waku-maru-2ju-2
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-ya2
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-b15
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a2
+    +deco-style01A2-mod-set-design-2col
+  .ex-style_01A3 &
+    // .mod-2col-wrap > div > div
+    //   +pat-item-waku-maru-2ju-3
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-ya3
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-b14
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a3
+    +deco-style01A3-mod-set-design-2col
+  .ex-style_01B1 &
+    // .mod-2col-wrap > div > div
+      // +pat-item-waku-jouge-beta-4
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yb1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-c4
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a7
+    +deco-style01B1-mod-set-design-2col
+  .ex-style_01B2 &
+    // .mod-2col-wrap > div > div
+      // +pat-item-waku-jouge-beta-5
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yb1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-c5
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a8
+    +deco-style01B2-mod-set-design-2col
+  .ex-style_01B3 &
+    // .mod-2col-wrap > div > div
+      // +pat-item-waku-jouge-beta-6
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yb2
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-c6
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a9
+    +deco-style01B3-mod-set-design-2col
+  .ex-style_01C1 &
+    // .mod-2col-wrap > div > div
+    //   +pat-item-waku-grade-border-ue-3px-1
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yc1
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-d12
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a1
+    +deco-style01C1-mod-set-design-2col
+  .ex-style_01C2 &
+    // .mod-2col-wrap > div > div
+    //   +pat-item-waku-grade-border-ue-3px-2
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yc2
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-d13
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a2
+    +deco-style01C2-mod-set-design-2col
+  .ex-style_01C3 &
+    // .mod-2col-wrap > div > div
+    //   +pat-item-waku-grade-border-ue-3px-3
+    // .mod-h_4_ver2
+    //   +pat-item-h4-bgd-yc3
+    .mod-bnr_ver2
+      +pat-item-bnr-box-for-2col-d14
+    // .mod-link-1st,
+    // .mod-link-2nd,
+    // .mod-link_ver2
+    //   +pat-item-link-box-for-2col-a3
+    +deco-style01C3-mod-set-design-2col
+
+// -----------------------------------
+// part-main-040
+// -----------------------------------
+// .mod-set-design4
+//   @extend %first-child-box-in2
+//   .ex-style_01A1 &
+//     +pat-item-waku-board-4
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-ga1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-1
+//     +deco-style-mod-set-design4-1
+//   .ex-style_01A2 &
+//     +pat-item-waku-board-5
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-ga2
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-1
+//     +deco-style-mod-set-design4-2
+//   .ex-style_01A3 &
+//     +pat-item-waku-board-6
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-ga3
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-1
+//     +deco-style-mod-set-design4-3
+//   .ex-style_01B1 &
+//     +pat-item-waku-ue-image-1
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gb1
+//     .mod-box_ver2
+//       +pat-item-waku-bgimg-1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-2
+//     +deco-style-mod-set-design4-4
+//   .ex-style_01B2 &
+//     +pat-item-waku-ue-image-2
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gb2
+//     .mod-box_ver2
+//       +pat-item-waku-bgimg-1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-2
+//     +deco-style-mod-set-design4-5
+//   .ex-style_01B3 &
+//     +pat-item-waku-ue-image-3
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gb3
+//     .mod-box_ver2
+//       +pat-item-waku-bgimg-1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-2
+//     +deco-style-mod-set-design4-6
+//   .ex-style_01C1 &
+//     +pat-item-waku-board-7
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gc1
+//     .mod-ul_ver2
+//       +pat-item-waku-maru-simple-1px-11
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-3
+//     +deco-style-mod-set-design4-7
+//   .ex-style_01C2 &
+//     +pat-item-waku-board-8
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gc2
+//     .mod-ul_ver2
+//       +pat-item-waku-maru-simple-1px-13
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-3
+//     +deco-style-mod-set-design4-8
+//   .ex-style_01C3 &
+//     +pat-item-waku-board-9
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gc3
+//     .mod-ul_ver2
+//       +pat-item-waku-maru-simple-1px-11
+//       +pat-item-list-default-7
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-3
+//     +deco-style-mod-set-design4-9
+//   .ex-style_02A1 &
+//     +pat-item-waku-fukidashi-1
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gd1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-4
+//     +deco-style-mod-set-design4-10
+//   .ex-style_02A2 &
+//     +pat-item-waku-fukidashi-2
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gd2
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-4
+//     +deco-style-mod-set-design4-11
+//   .ex-style_02A3 &
+//     +pat-item-waku-fukidashi-3
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gd3
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-4
+//     +deco-style-mod-set-design4-12
+//   .ex-style_02B1 &
+//     +pat-item-waku-fukidashi-4
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-ge1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-5
+//     +deco-style-mod-set-design4-13
+//   .ex-style_02B2 &
+//     +pat-item-waku-fukidashi-5
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-ge2
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-5
+//     +deco-style-mod-set-design4-14
+//   .ex-style_02B3 &
+//     +pat-item-waku-fukidashi-6
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-ge3
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-5
+//     +deco-style-mod-set-design4-15
+//   .ex-style_02C1 &
+//     +pat-item-waku-fukidashi-7
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gf1
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-6
+//     +deco-style-mod-set-design4-16
+//   .ex-style_02C2 &
+//     +pat-item-waku-fukidashi-8
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gf2
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-6
+//     +deco-style-mod-set-design4-17
+//   .ex-style_02C3 &
+//     +pat-item-waku-fukidashi-9
+//     .mod-h_4_ver2
+//       +pat-item-h4-bgp-gf3
+//     +comm-style-mod-set-design4
+//     +modu-style-mod-set-design4-6
+//     +deco-style-mod-set-design4-18

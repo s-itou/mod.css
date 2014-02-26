@@ -1,0 +1,54 @@
+@charset "UTF-8"
+
+// -------------------------------------
+// mod-set-pic-design
+// -------------------------------------
+
+// --------------------------------------------------------------------------
+// mod-set-pic-design
+// --------------------------------------------------------------------------
+=comm-style-mod-set-pic-design
+  .mod-2col_ver2
+    > .mod-2col-inner
+      margin: 0 0 0 25px
+      //imgFloatでbottom指定のため
+      width: 100px
+    &.ex-first-child
+      margin: 10px 0 0 0
+    .ex-imgLayout_l &
+      > .mod-2col-inner
+        margin: 0 25px 0 0
+        //imgFloatでbottom指定のため
+    .ex-imgFloat &
+      > .mod-2col-inner
+        margin: 0 0 12px 25px
+    .ex-imgFloat.ex-imgLayout_l &
+      > .mod-2col-inner
+        margin: 0 25px 12px 0
+      // .mod-rte_ver2
+      //   margin: 15px 0 0 0
+  .mod-bnr_ver2
+    overflow: hidden
+
+=modu-style-mod-set-pic-design
+
+=deco-style01A1-mod-set-pic-design
+  margin: 0
+  .mod-h_4_ver2
+    .mod-h_4-inner3
+      padding: 3px 7px 0
+      .mod-h
+        font-size: $fontSizeM
+  > .mod-box-inner
+    > .mod-box-inner2
+      > .mod-h_4_ver2
+        margin: 0 -8px
+        width: floor(($mainWidth - 84) / 2)
+        +border-radius(0)
+        .mod-h_4-inner3
+          +border-radius(0)
+          .mod-h
+            font-size: $fontSizeM
+  .mod-2col-inner2
+    > .mod-h_4_ver2
+      width: auto
